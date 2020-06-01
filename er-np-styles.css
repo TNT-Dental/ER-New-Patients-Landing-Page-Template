@@ -415,42 +415,6 @@ footer {
   text-shadow: 1.2px 2.8px 3px rgba(7, 8, 8, 0.11);
 }
 
-#fixed-tabs {
-  position: fixed;
-  right: 0;
-  text-align: center;
-  line-height: 1;
-  font-size: 0;
-  z-index: 10000;
-}
-
-#fixed-tabs a {
-  position: relative;
-  overflow: hidden;
-  font-size: 13px;
-  font-weight: 700;
-  font-family: "Lato", sans-serif;
-  background-color: #eaba47;
-  color: #000;
-  text-transform: uppercase;
-  -webkit-transition: width .3s;
-  transition: width .3s;
-}
-
-#fixed-tabs i {
-  font-size: 19px;
-  margin-right: 5px;
-}
-
-#fixed-tabs i, #fixed-tabs i:before {
-  display: inline-block;
-  margin: 0 auto;
-}
-
-#fixed-tabs a:nth-of-type(1) {
-  background-color: #17c8e2;
-}
-
 @media (min-width: 1031px) {
   #fixed-tabs {
     display: none;
@@ -459,6 +423,12 @@ footer {
 
 @media (max-width: 1030px) {
   #fixed-tabs {
+    position: fixed;
+    right: 0;
+    text-align: center;
+    line-height: 1;
+    font-size: 0;
+    z-index: 10000;
     bottom: 0;
     width: 100%;
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -472,9 +442,12 @@ footer {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-  }
-  #fixed-tabs i {
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "Barlow", sans-serif;
+    background-color: #eaba47;
+    color: #000;
+    text-transform: uppercase;
   }
   #fixed-tabs a span {
     display: inline-block;
@@ -483,13 +456,19 @@ footer {
   #fixed-tabs a span:last-child {
     margin-left: 7px;
   }
+  #fixed-tabs a:nth-of-type(2) {
+    background-color: #17c8e2;
+  }
+  #fixed-tabs i {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  #fixed-tabs i, #fixed-tabs i:before {
+    display: inline-block;
+    margin: 0 auto;
+  }
   footer {
     margin-bottom: 42px !important;
-  }
-  #fixed-tabs a:nth-of-type(2) {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
   }
 }
 
@@ -505,12 +484,12 @@ footer {
 body {
   position: relative;
   background-color: #f8f8f8;
-  font-family: "Lato", sans-serif;
+  font-family: "Barlow", sans-serif;
   text-align: center;
 }
 
 p {
-  font: 400 18px/28px "Lato", sans-serif;
+  font: 400 18px/28px "Barlow", sans-serif;
   color: #323232;
 }
 
@@ -521,25 +500,22 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lato", sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 .mobile-banner-reviews {
   display: none;
 }
 
-h1, #personalized h2 {
+h1, .personalized h2 {
   margin: 0;
   text-align: center;
   color: #fff;
-  font-size: 44px;
-  line-height: 1.15;
-  font-weight: 400;
-  font-family: "Lato", sans-serif;
+  font: 400 44px/1.1 "Barlow", sans-serif;
 }
 
-h1 span, #personalized h2 span {
-  font-family: "Lato", sans-serif;
+h1 span, h1 h2 span, .personalized h2 span, .personalized h2 h2 span {
+  font-family: "Barlow", sans-serif;
   font-size: 26px;
   font-weight: 300;
   display: block;
@@ -559,22 +535,57 @@ h3 {
   line-height: 1.41;
 }
 
-h4 {
-  font-size: 28px;
-  line-height: 1.41;
-}
-
 header {
   position: relative;
   padding: 5px 10px;
-  background-color: #262626;
+  background-color: #fff;
 }
 
-header > div {
+header .flex-ed {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   max-width: 1080px;
   margin: auto;
   width: 100%;
   padding-bottom: 10px;
+}
+
+header .btn-alt {
+  margin: 0;
+}
+
+header address {
+  text-align: right;
+  font-weight: 400;
+}
+
+header address a {
+  display: block;
+  text-align: right;
+}
+
+.address {
+  color: #000;
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.phone {
+  color: #1bcfea;
+  font-size: 38px;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.address:hover, .phone:hover {
+  color: #fecb53;
 }
 
 .fix-nav header {
@@ -593,49 +604,6 @@ header > div {
           box-shadow: 1.6px 2.5px 7px rgba(6, 7, 7, 0.35);
 }
 
-header .flex-ed {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-header .btn-alt {
-  margin: 0;
-}
-
-header address {
-  text-align: right;
-  font-weight: 400;
-}
-
-address a {
-  display: block;
-  text-align: right;
-}
-
-.address {
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.25;
-  font-weight: 400;
-}
-
-.phone {
-  color: #1bcfea;
-  font-size: 38px;
-  line-height: 1.1;
-  font-weight: 900;
-}
-
-.address:hover, .phone:hover {
-  color: #fecb53;
-}
-
 .btn, .btn-alt {
   cursor: pointer;
   position: relative;
@@ -644,7 +612,7 @@ address a {
   padding: 12px 15px;
   color: #000;
   border-radius: 20px;
-  font: 900 15px/1 "Lato", sans-serif;
+  font: 900 15px/1 "Barlow", sans-serif;
   -webkit-transition: border .3s;
   transition: border .3s;
   background-color: #1bcfea;
@@ -683,8 +651,8 @@ address a {
 .split article {
   margin: 10px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 500px;
-          flex: 0 1 500px;
+      -ms-flex: 0 1 550px;
+          flex: 0 1 550px;
 }
 
 .split figure img {
@@ -694,14 +662,14 @@ address a {
           box-shadow: 1.6px 2.5px 7px rgba(7, 8, 8, 0.35);
 }
 
-.even figure {
+.split.even figure {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
   margin-right: 40px;
 }
 
-.appt-bar {
+.safe-bar {
   width: 100%;
   position: relative;
   background-color: #fecb53;
@@ -709,9 +677,13 @@ address a {
   -webkit-box-shadow: 1.6px 2.5px 13px rgba(7, 8, 8, 0.35);
   box-shadow: 1.6px 2.5px 13px rgba(7, 8, 8, 0.35);
   color: #000;
-  font: 700 18px/1.2 "Lato", sans-serif;
+  font: 700 18px/1.2 "Barlow", sans-serif;
   padding: 7px 10px;
   text-align: center;
+}
+
+.safe-bar span {
+  margin: 0 10px;
 }
 
 #banner {
@@ -724,7 +696,7 @@ address a {
   position: relative;
 }
 
-#banner figure div img {
+#banner figure img {
   position: relative;
   width: 100%;
 }
@@ -740,14 +712,6 @@ address a {
   margin: -90px auto 20px;
 }
 
-#lists > section {
-  margin: 10px 5px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 570px;
-          flex: 0 1 570px;
-  padding: 25px 0 40px;
-}
-
 #lists sup {
   top: -.7em;
 }
@@ -761,7 +725,7 @@ address a {
   margin: auto;
 }
 
-#personalized {
+.personalized {
   position: relative;
   margin: auto;
   max-width: 1040px;
@@ -770,9 +734,14 @@ address a {
   -webkit-box-shadow: 1.6px 2.5px 7px rgba(7, 8, 8, 0.35);
           box-shadow: 1.6px 2.5px 7px rgba(7, 8, 8, 0.35);
   border-radius: 10px;
+  margin: 10px 5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 570px;
+          flex: 0 1 570px;
+  padding: 25px 0 40px;
 }
 
-#personalized h1, #personalized h2 {
+.personalized h1, .personalized h2 {
   position: relative;
   font-weight: 400;
   text-transform: none;
@@ -812,6 +781,10 @@ address a {
   border-radius: 0 20px 20px 0;
 }
 
+.personalized:last-of-type .border-box:before, .personalized:last-of-type .border-box:after {
+  width: 100px;
+}
+
 .list {
   text-align: left;
   display: table;
@@ -826,7 +799,7 @@ address a {
 .list ul li {
   width: 100%;
   color: #fff;
-  font: 300 29px/1.2 "Lato", sans-serif;
+  font: 300 29px/1.2 "Barlow", sans-serif;
   padding-left: 32px;
   padding-top: 10px;
   list-style: none;
@@ -840,11 +813,7 @@ address a {
   font-size: .9em;
   position: absolute;
   top: 13px;
-  left: 0;
-}
-
-#personalized:nth-of-type(2) .border-box:before, #personalized:nth-of-type(2) .border-box:after {
-  width: 100px;
+  left: 3px;
 }
 
 .looking {
@@ -870,63 +839,6 @@ address a {
   padding: 0 0 1px;
   background-color: #f8f8f8;
   position: relative;
-}
-
-#dentist {
-  position: relative;
-  z-index: 2;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 50px 10px;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-#dentist article {
-  text-align: left;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 620px;
-          flex: 0 1 620px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
-#dentist article h2 {
-  margin: 0;
-  line-height: 1;
-}
-
-#dentist figure {
-  position: relative;
-  margin-top: 0;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
-.caption {
-  background-color: #262626;
-  position: relative;
-  display: table;
-  margin: -20px auto 20px;
-  padding: 0 5px;
-}
-
-.caption a {
-  color: #fff;
-  display: inline-block;
-  padding: 10px;
-  text-align: center;
-  font: 400 16px/1 "Lato", sans-serif;
-  bottom: 0;
-  margin: auto;
-}
-
-.caption a span {
-  margin: 0 10px;
-}
-
-.caption a:hover {
-  color: #fecb53;
 }
 
 .insurance {
@@ -970,10 +882,6 @@ address a {
           flex: 1;
 }
 
-.insurance.savings h2:before {
-  background-color: #fecb53;
-}
-
 .insurance h2:before {
   margin-right: 20px;
 }
@@ -999,48 +907,60 @@ address a {
   padding: 5px;
 }
 
-.insurance .plans {
-  color: #898989;
-  font: 400 14px/1.1 "Lato", sans-serif;
-}
-
 .insurance p {
   line-height: 28px;
   max-width: 970px;
   margin: 10px auto;
 }
 
-.insurance #employ {
-  max-width: 680px;
-  margin: 10px auto;
-  position: relative;
-  z-index: 4;
-  padding-top: 25px;
-}
-
-.insurance #employ figure {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: -20px auto 10px;
-}
-
-.insurance #employ span {
-  margin: 5px;
-}
-
 .insurance .disclaim {
   color: #898989;
-  font: 400 14px/1 "Lato", sans-serif;
+  font: 400 14px/1 "Barlow", sans-serif;
   margin-top: 20px;
   text-align: center;
+}
+
+#dentist {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 50px 10px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#dentist article {
+  text-align: left;
+}
+
+#dentist figure {
+  position: relative;
+}
+
+.caption {
+  background-color: #262626;
+  position: relative;
+  display: table;
+  margin: -20px auto 20px;
+  padding: 0 5px;
+}
+
+.caption a {
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  font: 400 16px/1 "Barlow", sans-serif;
+  bottom: 0;
+  margin: auto;
+}
+
+.caption a span {
+  margin: 0 10px;
+}
+
+.caption a:hover {
+  color: #fecb53;
 }
 
 #reviews {
@@ -1064,7 +984,7 @@ address a {
       flex-wrap: nowrap;
 }
 
-#facebook {
+#google {
   background-color: #fff;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 175px;
@@ -1084,16 +1004,16 @@ address a {
           justify-content: center;
 }
 
-#facebook img {
+#google img {
   padding: 5px 0;
 }
 
-#facebook > div {
+#google > div {
   margin-top: 15px;
   padding: 5px 25px;
 }
 
-#facebook p {
+#google p {
   color: #fff;
   font-size: 20px;
   line-height: 1.25;
@@ -1116,7 +1036,7 @@ address a {
 }
 
 .comment p {
-  font: 400 italic 18px/1.466 "Lato", sans-serif;
+  font: 400 italic 18px/1.466 "Barlow", sans-serif;
   margin-top: 0;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -1126,7 +1046,7 @@ address a {
 
 .comment .caption2 {
   float: right;
-  font: 600 normal 16px/1 "Lato", sans-serif;
+  font: 600 normal 16px/1 "Barlow", sans-serif;
   text-transform: uppercase;
   margin: 5px 0 10px;
 }
@@ -1196,10 +1116,20 @@ address a {
 }
 
 footer {
+  overflow: hidden;
   padding: 40px 0 0;
   background-color: #4c4c4c;
   background-image: -webkit-gradient(linear, left top, right top, from(#2c2c2c), color-stop(0.5%, #2c2c2c), color-stop(50%, #474747), color-stop(99.5%, #2c2c2c), to(#2c2c2c));
   background-image: linear-gradient(to right, #2c2c2c 0%, #2c2c2c 0.5%, #474747 50%, #2c2c2c 99.5%, #2c2c2c 100%);
+}
+
+footer h2 {
+  text-shadow: 1.6px 2.5px 7px rgba(1, 1, 1, 0.45);
+  font: 600 68px/1.2 'Oswald', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 20px;
 }
 
 footer .split {
@@ -1214,20 +1144,11 @@ footer .split {
   margin-bottom: 30px;
 }
 
-footer .split > div {
+footer .split article {
   margin-top: 65px;
-}
-
-footer h2 {
-  text-shadow: 1.6px 2.5px 7px rgba(1, 1, 1, 0.45);
-  font: 600 68px/1.2 'Oswald', sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 auto 20px;
-}
-
-footer article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 300px;
+          flex: 0 1 300px;
   background-color: #1bcfea;
   border-radius: 10px;
   -webkit-box-shadow: 1.6px 2.5px 7px rgba(15, 16, 16, 0.35);
@@ -1235,33 +1156,33 @@ footer article {
   padding: 0 25px 20px;
 }
 
-footer article p {
+footer .split article p {
   margin-top: 20px;
   text-align: center;
-  font: 700 33px/1.2 "Lato", sans-serif;
+  font: 700 33px/1.2 "Barlow", sans-serif;
   margin-bottom: 10px;
   text-transform: uppercase;
   color: #000;
 }
 
-footer article p span:first-child {
+footer .split article p span:first-child {
   font-size: 39px;
 }
 
-footer article p small {
+footer .split article p small {
   font-size: 24px;
   line-height: 29px;
 }
 
-footer article p:last-of-type {
+footer .split article p:last-of-type {
   line-height: .8;
 }
 
-footer article:hover {
+footer .split article:hover {
   background-color: #fecb53;
 }
 
-footer article:hover p {
+footer .split article:hover p {
   color: #fff;
 }
 
@@ -1273,7 +1194,7 @@ footer figure {
   color: #fff;
 }
 
-footer .frame {
+.frame {
   overflow: hidden;
   display: table;
   width: 95%;
@@ -1281,7 +1202,7 @@ footer .frame {
   border-radius: 10px;
 }
 
-footer .frame iframe {
+.frame iframe {
   height: 360px;
   display: block;
   max-width: 520px;
@@ -1295,7 +1216,7 @@ figcaption {
 }
 
 figcaption p {
-  font: 300 20px/1 "Lato", sans-serif;
+  font: 300 20px/1 "Barlow", sans-serif;
   text-transform: uppercase;
   text-shadow: 1px 1.7px 5px rgba(0, 0, 0, 0.7);
   color: #fff;
@@ -1317,12 +1238,12 @@ figcaption:hover p {
   background-color: #262626;
   margin: auto;
   text-transform: uppercase;
-  font: 400 12px/1.4 "Lato", sans-serif;
+  font: 400 12px/1.4 "Barlow", sans-serif;
   color: #fff;
 }
 
 .copy a, .copy p {
-  font: 400 12px/1.4 "Lato", sans-serif;
+  font: 400 12px/1.4 "Barlow", sans-serif;
   color: #fff;
 }
 
@@ -1396,6 +1317,13 @@ figcaption:hover p {
   border-radius: 5px;
   padding: 15px;
   font-size: 16px;
+  border: none;
+  -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+#lp-appointment-form input:focus, #lp-appointment-form textarea:focus {
+  background-color: #e3e3e3;
 }
 
 #lp-appointment-form textarea {
@@ -1403,17 +1331,7 @@ figcaption:hover p {
   margin-bottom: 30px;
 }
 
-#lp-appointment-form textarea, #lp-appointment-form input {
-  border: none;
-  -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
-}
-
-#lp-appointment-form textarea:focus, #lp-appointment-form input:focus {
-  background-color: #e3e3e3;
-}
-
-#lp-appointment-form textarea:focus, #lp-appointment-form input:focus, button:focus {
+#lp-appointment-form textarea:focus, #lp-appointment-form input:focus, #lp-appointment-form button:focus {
   outline-style: solid;
   outline-width: thin;
   outline-color: #fecb53;
@@ -1427,7 +1345,7 @@ figcaption:hover p {
 }
 
 @media (max-width: 1160px) {
-  #dentist article h2, h2, #practice h2 {
+  h2 {
     font-size: 45px;
   }
   .address {
@@ -1447,21 +1365,8 @@ figcaption:hover p {
   .border-box:before, .border-box:after {
     width: 20px;
   }
-  #personalized:last-of-type .border-box:before, #personalized:last-of-type .border-box:after {
+  .personalized:last-of-type .border-box:before, .personalized:last-of-type .border-box:after {
     width: 50px;
-  }
-  .over {
-    left: -5px;
-    top: -30px;
-  }
-}
-
-@media (max-width: 1060px) {
-  #banner h1 {
-    top: 20px;
-  }
-  .border-box:before, .border-box:after {
-    visibility: hidden;
   }
 }
 
@@ -1485,25 +1390,7 @@ figcaption:hover p {
   #stamp {
     top: -100px;
   }
-  #dentist article {
-    padding: 10px;
-  }
-  #dentist {
-    display: block;
-    padding: 10px 0 0;
-  }
-  #dentist figure {
-    margin: auto;
-    max-width: 600px;
-    padding: 10px 10px 0;
-  }
-  h2 {
-    text-align: center;
-  }
-  .border-box:after, .border-box:before {
-    width: 50px;
-  }
-  #practice h2 {
+  h2, #practice h2 {
     text-align: center;
   }
   #lists {
@@ -1513,14 +1400,30 @@ figcaption:hover p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .border-box:before, .border-box:after {
-    visibility: visible;
-  }
   .list ul {
     max-width: 490px;
   }
+  .border-box:before, .border-box:after {
+    visibility: visible;
+  }
+  .border-box:after, .border-box:before {
+    width: 50px;
+    bottom: 20px;
+  }
   .bkgrd {
     padding: 0;
+  }
+  #dentist {
+    display: block;
+    padding: 10px 0 0;
+  }
+  #dentist article {
+    padding: 10px;
+  }
+  #dentist figure {
+    margin: auto;
+    max-width: 600px;
+    padding: 10px 10px 0;
   }
   #reviews {
     padding: 0;
@@ -1529,17 +1432,17 @@ figcaption:hover p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #facebook {
+  #google {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
   }
-  #facebook p, #facebook p img {
+  #google p, #google p img {
     display: inline-block;
     vertical-align: middle;
     margin: 5px 5px 10px;
   }
-  #facebook > div {
+  #google > div {
     margin-top: 10px;
   }
   #patients {
@@ -1553,13 +1456,13 @@ figcaption:hover p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer .split > div {
-    margin-top: 0;
+  footer .split article {
+    margin: 20px auto;
   }
 }
 
 @media (max-width: 790px) {
-  header, header > div {
+  header {
     padding: 0;
   }
   header .flex-ed {
@@ -1567,9 +1470,12 @@ figcaption:hover p {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    padding: 0;
   }
   header .btn-alt, header address {
     -webkit-box-flex: 0;
@@ -1593,14 +1499,11 @@ figcaption:hover p {
   }
   header .logo {
     width: 100%;
-    margin: 10px 10px 50px;
+    margin: 10px;
     max-width: none;
   }
-  header .logo img {
-    margin-bottom: -35px;
-  }
   header .btn-alt {
-    background-color: #000;
+    color: #000;
     color: #fff;
     background-image: none;
     border: 0;
@@ -1639,12 +1542,14 @@ figcaption:hover p {
     background-color: #3d3d3d;
     color: #fff;
   }
-  .appt-bar span {
+  .safe-bar span:last-of-type {
     display: block;
+    font-size: 0;
   }
   .mobile-banner-reviews {
     display: block;
     background-color: #f3f3f3;
+    text-transform: uppercase;
   }
   .mobile-banner-reviews img, .mobile-banner-reviews p {
     display: inline-block;
@@ -1652,27 +1557,6 @@ figcaption:hover p {
   }
   .mobile-banner-reviews p {
     padding: 0 50px;
-  }
-  #banner h1 {
-    top: 25px;
-    font-size: 15px;
-  }
-  #lists {
-    display: block;
-    margin: 0 auto 20px;
-  }
-  #personalized {
-    margin-top: -40px;
-    border-radius: 0;
-  }
-  #personalized + #personalized {
-    background-color: #151515;
-  }
-  #practice .pager {
-    margin-top: 20px;
-  }
-  #lists > section {
-    margin: 0;
   }
   #banner .container {
     -ms-flex-wrap: wrap;
@@ -1682,9 +1566,6 @@ figcaption:hover p {
     margin: 0;
     background-color: #f3f3f3;
     padding-bottom: 0;
-  }
-  #banner figure div {
-    overflow: hidden;
   }
   #banner figure img {
     margin: 0 auto;
@@ -1705,6 +1586,22 @@ figcaption:hover p {
     color: #064367;
     margin-top: 15px;
   }
+  #lists {
+    display: block;
+    margin: 0 auto 20px;
+  }
+  .list {
+    max-width: 750px;
+    margin: 30px auto 20px;
+  }
+  .personalized {
+    margin-top: -40px;
+    border-radius: 0;
+    margin: 0;
+  }
+  .personalized + .personalized {
+    background-color: #151515;
+  }
   #stamp {
     position: static;
     display: block;
@@ -1718,7 +1615,7 @@ figcaption:hover p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 42vh;
+    height: 35vh;
   }
   #stamp img {
     max-width: 100%;
@@ -1729,46 +1626,45 @@ figcaption:hover p {
   .split p, .comment, #practice p {
     text-align: center;
   }
+  #dentist figure {
+    margin-top: -20px;
+  }
+  #practice {
+    padding-bottom: 20px;
+  }
   #practice .flex-ed {
     display: block;
   }
   #practice .flex-ed > div {
-    margin: 0;
+    margin: 0 auto;
     right: 0;
   }
   #practice img {
     margin: 0 auto;
   }
-  #dentist figure {
-    margin-top: -20px;
-  }
-  #personalized .list {
-    max-width: 750px;
-    margin: 30px auto 20px;
-  }
-  #practice {
-    padding-bottom: 20px;
+  #practice .pager {
+    margin-top: 20px;
   }
   footer h2 {
     font-size: 42px;
   }
-  footer article {
-    margin-bottom: 30px;
-  }
   footer .split > div {
     margin-top: 0;
+  }
+  footer article {
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 700px) {
-  #personalized h1, #personalized h2 {
+  .personalized h1, .personalized h2 {
     font-size: 36px;
   }
   .looking {
     margin: 20px auto;
   }
   .looking p {
-    padding: 14px 10px;
+    padding: 14px 20px;
     font-size: 18px;
     line-height: 1.45;
   }
@@ -1778,10 +1674,10 @@ figcaption:hover p {
   .insurance {
     padding: 0;
   }
-  #facebook > div {
+  #google > div {
     margin-top: 20px;
   }
-  #facebook p {
+  #google p {
     margin-bottom: 0;
   }
   #reviews {
@@ -1796,7 +1692,7 @@ figcaption:hover p {
 }
 
 @media (max-width: 590px) {
-  h2, #practice h2, #patients h2 {
+  h2, #practice h2 {
     text-align: center;
     font-size: 36px;
     line-height: 1.2;
@@ -1805,16 +1701,17 @@ figcaption:hover p {
   h2 span {
     font-size: 26px;
   }
-  .appt-bar {
+  .safe-bar {
     letter-spacing: 0;
+    font-size: 16px;
   }
-  .appt-bar strong:nth-of-type(2) {
-    display: block;
+  .safe-bar span {
+    margin: 0;
   }
-  #personalized {
+  .personalized {
     padding: 20px 10px;
   }
-  #personalized .list {
+  .personalized .list {
     max-width: 360px;
   }
   .list ul li {
@@ -1824,7 +1721,7 @@ figcaption:hover p {
   .even figure {
     margin: 0 auto;
   }
-  #personalized p {
+  .personalized p {
     padding: 0 10px;
   }
   footer h2 {
@@ -1839,24 +1736,21 @@ figcaption:hover p {
     font-size: 32px;
     margin-top: 5px;
   }
-  .icon-phone {
-    font-size: 30px;
-  }
-  footer article p big {
-    line-height: 1;
-  }
-  footer .frame {
-    max-width: 98%;
-    margin: auto;
-  }
-  footer .frame iframe {
-    display: none;
-  }
   footer figure {
     margin-top: -10px;
   }
+  .frame {
+    max-width: 98%;
+    margin: auto;
+  }
+  .frame iframe {
+    display: none;
+  }
   figcaption {
     margin-top: 0;
+  }
+  .icon-phone {
+    font-size: 30px;
   }
   .copy {
     padding: 30px 10px 20px;
@@ -1864,13 +1758,13 @@ figcaption:hover p {
 }
 
 @media (max-width: 480px) {
-  #personalized h1, #personalized h2 {
+  .personalized h1, .personalized h2 {
     font-size: 32px;
   }
   #lists > section {
     padding: 10px 0;
   }
-  #personalized .list {
+  .personalized .list {
     margin: 0 auto;
   }
   .list ul li {
@@ -1893,9 +1787,6 @@ figcaption:hover p {
   .bkgrd {
     padding-bottom: 25px;
   }
-  .appt-bar strong:nth-of-type(2) {
-    display: block;
-  }
   .border-box:before, .border-box:after {
     display: none;
   }
@@ -1906,37 +1797,32 @@ figcaption:hover p {
     display: block;
     font-size: 0;
   }
-  #lp-appointment-form h1 {
-    font-size: 28px;
-  }
 }
 
 @media (max-width: 400px) {
   header .btn-alt {
     font-size: 14px;
   }
-  .appt-bar {
+  .mobile-banner-reviews p {
+    padding: 0 30px;
+    font-size: 14px;
+  }
+  .safe-bar {
     font-size: 15px;
   }
-  .appt-bar strong:nth-of-type(2), .appt-bar span {
-    display: inline;
-  }
-  #personalized h1, #personalized h2 {
-    font-size: 26px;
-  }
-  h1 span, #personalized h2 span {
-    font-size: 24px;
-  }
-  #personalized .btn-alt {
-    padding: 13px 45px 13px 10px;
-  }
-  #personalized {
+  .personalized {
     padding: 20px 10px;
   }
-  #personalized p, figcaption p {
+  .personalized h1, .personalized h2 {
+    font-size: 26px;
+  }
+  .personalized h1 span, .personalized h2 span {
+    font-size: 24px;
+  }
+  .personalized p, .personalized figcaption p {
     font-size: 18px;
   }
-  #personalized li {
+  .personalized li {
     line-height: 1;
     padding-bottom: 5px;
   }
@@ -1954,17 +1840,11 @@ figcaption:hover p {
   .comment .caption2 {
     font-size: 15px;
   }
-  #dentist, #patients {
+  #dentist {
     margin-top: 20px;
-  }
-  #dentist article h2, h2, #practice h2 {
-    font-size: 28px;
   }
   #dentist .caption {
     font-size: 14px;
-  }
-  .mobile-banner-reviews p {
-    padding: 0 30px;
   }
   .insurance h2 {
     font-size: 28px;
@@ -1977,14 +1857,8 @@ figcaption:hover p {
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
   }
-  .mobile-banner-reviews p {
+  #google p {
     font-size: 14px;
-  }
-  #facebook p {
-    font-size: 14px;
-  }
-  footer {
-    overflow: hidden;
   }
   footer h2 {
     font-size: 30px;
@@ -1996,7 +1870,7 @@ figcaption:hover p {
     margin-bottom: 0;
     padding: 20px;
   }
-  footer article p bold {
+  footer article p strong {
     font-size: 30px;
   }
   footer article p big {

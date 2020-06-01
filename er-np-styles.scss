@@ -1,32 +1,33 @@
 .progress,sub,sup{vertical-align:baseline}.block,.elem-left,.elem-right,article,aside,details,figcaption,figure,footer,header,hr,main,menu,nav,section,summary{display:block}hr,sub,sup{position:relative}body,figure{margin:0}button,hr,input,select{overflow:visible}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;box-sizing:border-box;font-size:100%}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:0 0 .67em}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:50%;line-height:0}sub{bottom:-.25em}sup{top:-.45em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;border:0}button,input,select,textarea{font:inherit;line-height:initial;margin:0}optgroup{font-weight:700}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button;-moz-appearance:button;appearance:button;border:0}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}button:-moz-focusring,input:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;-moz-appearance:textfield;appearance:textfield}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none;appearance:none}*,::before,::after{box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.clearfix:before,.clearfix:after{display:table;content:" "}.clearfix:after{clear:both}address{font-style:normal!important}img{max-width:100%;display:block;margin:0 auto}.icon-gplus:before{margin-left:-1px!important}*,::before,::after{box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}[class*=" icon-"]:before,[class^=icon-]:before{line-height:1!important;display:block!important}img{max-width:100%}header{z-index:101}footer{z-index:102}.fixons{z-index:103}.flex-ed,.col-flex-ed{display:flex}.flex-ed{flex-flow:row wrap}
 .animated{-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes slideIn{from{transform:translate3d(0,-100%,0)}to{transform:translate3d(0,0,0)}}@keyframes slideIn{from{transform:translate3d(0,-100%,0)}to{transform:translate3d(0,0,0)}}@-webkit-keyframes fadeInUp{from{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}@keyframes fadeInUp{from{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}@-webkit-keyframes fadeInRight{from{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:none}}@keyframes fadeInRight{from{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:none}}.fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight}@-webkit-keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:none}}@keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:none}}.fadeInLeft{-webkit-animation-name:fadeInLeft;animation-name:fadeInLeft}
-
+.star:before{font-size:1.5em;font-family:'fontello';font-weight:400;margin:0;font-style:normal;content:'\e80f \e80f \e80f \e80f \e80f';color:#fed641;text-shadow:1.2px 2.8px 3px rgba(7,8,8,0.11)}
 
 $primary: #1bcfea;
 $secondary:#fecb53;
-$font: "Lato", sans-serif;
+$font: "Barlow", sans-serif;
 
-.star:before{font-size:1.5em;font-family:'fontello';font-weight:400;margin:0;font-style:normal;content:'\e80f \e80f \e80f \e80f \e80f';color:#fed641;text-shadow:1.2px 2.8px 3px rgba(7,8,8,0.11)}
-#fixed-tabs{position:fixed;right:0;text-align:center;line-height:1;font-size:0;z-index:10000}
-#fixed-tabs a{position:relative;overflow:hidden;font-size:13px;font-weight:700;font-family: $font;background-color:#eaba47;color:#000;text-transform:uppercase;transition:width .3s}
-#fixed-tabs i{font-size:19px; margin-right: 5px;;}
-#fixed-tabs i,#fixed-tabs i:before{display:inline-block;margin:0 auto}
-#fixed-tabs a:nth-of-type(1){background-color:#17c8e2; }
+
 @media (min-width: 1031px) {
     #fixed-tabs{display:none}
 }
 @media (max-width: 1030px) {
-    #fixed-tabs{bottom:0;width:100%;box-shadow:0 0 15px rgba(0,0,0,0.3); display:flex}
-    #fixed-tabs a{padding:13px 0;flex:1} 
-    #fixed-tabs i{font-size:16px}
-    #fixed-tabs a span{display:inline-block;vertical-align:middle}
-    #fixed-tabs a span:last-child{margin-left:7px}
+    #fixed-tabs{position:fixed;right:0;text-align:center;line-height:1;font-size:0;z-index:10000; bottom:0;width:100%;box-shadow:0 0 15px rgba(0,0,0,0.3); display:flex;
+       a{padding:13px 0;flex:1; font-size:13px;font-weight:700;font-family: $font;background-color:#eaba47;color:#000;text-transform:uppercase;
+          span{display:inline-block;vertical-align:middle;
+            &:last-child{margin-left:7px}
+           } 
+           &:nth-of-type(2){background-color:#17c8e2; }
+        }
+       i{font-size:16px; margin-right: 5px;}
+       i, i:before{display:inline-block;margin:0 auto}
+    }
     footer{margin-bottom:42px!important}
-    #fixed-tabs a:nth-of-type(2){order:-1}
 }
 @media (max-width: 600px) {
-    #fixed-tabs strong{display:none}
-    #fixed-tabs a span:last-child{margin-left:0}
+    #fixed-tabs {
+        strong{display:none}
+        a span:last-child{margin-left:0}
+    }
 }
 
 body{position:relative;background-color:#f8f8f8;font-family: $font; text-align:center}
@@ -34,123 +35,167 @@ p{font:400 18px/28px $font; color:#323232}
 a{display:inline-block;text-decoration:none;cursor:pointer}
 h1,h2,h3,h4,h5,h6{font-family: $font;}
 .mobile-banner-reviews{display:none}
-h1,#personalized h2{margin:0;text-align:center;color:#fff;font-size:44px;line-height:1.15;font-weight:400;font-family: $font;}
-h1 span,#personalized h2 span{font-family: $font; font-size:26px;font-weight:300;display:block}
+h1, .personalized h2{margin:0;text-align:center;color:#fff; font:400 44px/1.1 $font; 
+    span, h2 span{font-family: $font; font-size:26px;font-weight:300;display:block}
+}
 h2{color:#000;text-align:left;font-size:40px;line-height:52px;letter-spacing: -1px; font-weight: 300;}
 h3{font-size:32px;line-height:1.41}
-h4{font-size:28px;line-height:1.41}
-header{position:relative;padding:5px 10px;background-color:#262626}
-header > div{max-width:1080px;margin:auto;width:100%;padding-bottom:10px}
-.fix-nav header{position:fixed;width:100%;left:0;top:0;right:0;-webkit-animation-duration:1.5s;animation-duration:1.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:slideIn;animation-name:slideIn;box-shadow:1.6px 2.5px 7px rgba(6,7,7,0.35)}
-header .flex-ed{justify-content:space-between;align-items:center;flex-wrap:nowrap}
-header .btn-alt{margin:0;}
-header address{text-align:right;font-weight:400}
-address a{display:block;text-align:right}
-.address{color:#fff;font-size:18px;line-height:1.25;font-weight:400}
+
+
+header{position:relative;padding:5px 10px;background-color:#fff;
+    .flex-ed{justify-content:space-between;align-items:center;flex-wrap:nowrap; max-width:1080px;margin:auto;width:100%;padding-bottom:10px}
+    .btn-alt{margin:0;}
+    address{text-align:right;font-weight:400;
+        a{display:block;text-align:right}
+    }
+}
+.address{color:#000;font-size:18px;line-height:1.25;font-weight:400}
 .phone{color: $primary;font-size:38px;line-height:1.1;font-weight:900}
 .address:hover,.phone:hover{color:$secondary}
-.btn,.btn-alt{cursor:pointer;position:relative;display:inline-block;margin:3px auto;padding:12px 15px;color:#000;border-radius:20px;font:900 15px/1 $font;transition:border .3s;background-color:$primary;box-shadow:1.6px 2.5px 7px rgba(2,2,2,0.35)}
+.fix-nav header{position:fixed;width:100%;left:0;top:0;right:0;-webkit-animation-duration:1.5s;animation-duration:1.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:slideIn;animation-name:slideIn;box-shadow:1.6px 2.5px 7px rgba(6,7,7,0.35)}
+
+.btn,.btn-alt{cursor:pointer;position:relative;display:inline-block;margin:3px auto;padding:12px 15px;color:#000;border-radius:20px;font:900 15px/1 $font;transition:border .3s;background-color:$primary;box-shadow:1.6px 2.5px 7px rgba(2,2,2,0.35); }
 .btn-alt:hover,.btn:hover{background-color:$secondary;color:#000}
-
 .btn-alt:after{content:'\e937'; font-family: fontello; font-size: 20px; margin: 0 5px 0 10px; }
-.split{display:flex;justify-content:space-around;flex-wrap:wrap;align-items:center;justify-content:center}
-.split article{margin:10px;flex:0 1 500px}
-.split figure img{position:relative;border-radius:10px;box-shadow:1.6px 2.5px 7px rgba(7,8,8,0.35)}
-.even figure{order:-1;margin-right:40px}
-.appt-bar{width:100%;position:relative;background-color:#fecb53;z-index:10;-webkit-box-shadow:1.6px 2.5px 13px rgba(7,8,8,0.35);box-shadow:1.6px 2.5px 13px rgba(7,8,8,0.35);color:#000;font:700 18px/1.2 $font; padding:7px 10px;text-align:center; }
 
-#banner{overflow:hidden}
-#banner figure{margin-top:0;padding-bottom:20px;position:relative}
-#banner figure div img{position:relative;width:100%}
-#lists{position:relative;justify-content:space-between;flex-wrap:nowrap;max-width:1190px;margin:-90px auto 20px}
-#lists > section{margin:10px 5px;flex:0 1 570px;padding:25px 0 40px}
-#lists sup{top:-.7em}
-#stamp{position:absolute;z-index:2;top:-135px;left:0;right:0;margin:auto}
-#personalized{position:relative;margin:auto;max-width:1040px;background-color:#262626;padding:20px 10px 30px;box-shadow:1.6px 2.5px 7px rgba(7,8,8,0.35);border-radius:10px}
-#personalized h1,#personalized h2{position:relative;font-weight:400;text-transform:none;line-height:1;margin-top:0}
-.border-box:before{content:'';position:absolute;left:10px;bottom:10px;margin-bottom:20px;margin-left:20px;display:inline-block;height:71%;width:50px;border-top:5px solid #3b3b3b;border-left:5px solid #3b3b3b; border-bottom:5px solid #3b3b3b; border-radius:20px 0 0 20px}
-.border-box:after{content:'';position:absolute;right:10px;bottom:10px;margin-bottom:20px;margin-right:20px;display:inline-block;height:71%;width:50px;border-top:5px solid #3b3b3b; border-right:5px solid #3b3b3b; border-bottom:5px solid #3b3b3b; border-radius:0 20px 20px 0}
-.list{text-align:left;display:table;margin:auto}
-.list ul{padding-left:0;padding-bottom:10px}
-.list ul li{width:100%;color:#fff;font:300 29px/1.2 $font;padding-left:32px;padding-top:10px;list-style:none; position: relative; 
-    &:before {content: '\e914'; font-family: fontello; color: $secondary; font-size: .9em; position: absolute; top: 13px; left: 0;;}
+
+.split{display:flex;justify-content:space-around;flex-wrap:wrap;align-items:center;justify-content:center;
+    article{margin:10px;flex:0 1 550px}
+    figure img{position:relative;border-radius:10px;box-shadow:1.6px 2.5px 7px rgba(7,8,8,0.35)}
+    &.even figure{order:-1;margin-right:40px}
 }
-#personalized:nth-of-type(2) .border-box:before,#personalized:nth-of-type(2) .border-box:after{width:100px}
-.looking{max-width:1140px;margin:40px auto 60px}
-.looking p{font-size:19px;font-weight:400;line-height:32px;margin:auto;padding:15px 40px;text-align:center}
-.looking p span{font-size:31px;font-weight:300}
-.bkgrd{padding:0 0 1px;background-color:#f8f8f8;position:relative}
-#dentist{position:relative;z-index:2;max-width:1000px;margin:0 auto;padding:50px 10px;flex-wrap:nowrap}
-#dentist article{text-align:left;flex:0 1 620px;align-self:flex-start}
-#dentist article h2{margin:0;line-height:1}
-#dentist figure{position:relative;margin-top:0;align-self:flex-start}
-.caption {background-color: #262626; position: relative; display: table;  margin: -20px auto 20px;  padding: 0 5px;}
-.caption a{color:#fff;display:inline-block;padding:10px;text-align:center;font:400 16px/1 $font;bottom:0;margin:auto;}
-.caption a span {margin: 0 10px;}
-.caption a:hover{color:$secondary}
-.insurance{background-color:#fff;text-align:left;padding:0 0 30px;position:relative;overflow:hidden}
-.insurance .container{max-width:1045px;margin:auto;padding:20px;text-align:center}
-.insurance h2{display:flex;align-items:center;position:relative;text-align:center;z-index:2;padding:10px 20px 15px;margin:10px auto -15px;justify-content:center}
-.insurance h2:before,.insurance h2:after{content:'';height:2px;background-color:#000;flex:1}
-.insurance.savings h2:before{background-color:$secondary;}
-.insurance h2:before{margin-right:20px}
-.insurance h2:after{margin-left:20px}
-.insurance .flex-ed{display:flex;justify-content:space-around;align-items:center;max-width:1040px;margin:0}
-.insurance .flex-ed span {padding: 5px;}
 
-.insurance .plans{color:#898989;font:400 14px/1.1 $font;}
-.insurance p{line-height:28px;max-width:970px;margin:10px auto}
-.insurance #employ{max-width:680px;margin:10px auto;position:relative;z-index:4;padding-top:25px}
-.insurance #employ figure{display:flex;flex-wrap:wrap;justify-content:space-around;align-items:center;margin:-20px auto 10px}
-.insurance #employ span{margin:5px}
-.insurance .disclaim{color:#898989;font:400 14px/1 $font;margin-top:20px;text-align:center}
+
+.safe-bar{width:100%;position:relative;background-color:#fecb53;z-index:10;-webkit-box-shadow:1.6px 2.5px 13px rgba(7,8,8,0.35);box-shadow:1.6px 2.5px 13px rgba(7,8,8,0.35);color:#000;font:700 18px/1.2 $font; padding:7px 10px;text-align:center;
+    span {margin: 0 10px;}
+}
+#banner{overflow:hidden;
+    figure{margin-top:0;padding-bottom:20px;position:relative}
+    figure img{position:relative;width:100%}
+} 
+
+#lists{position:relative;justify-content:space-between;flex-wrap:nowrap;max-width:1190px;margin:-90px auto 20px;
+    sup{top:-.7em}
+}
+#stamp{position:absolute;z-index:2;top:-135px;left:0;right:0;margin:auto}
+
+.personalized{ position:relative;margin:auto;max-width:1040px;background-color:#262626;padding:20px 10px 30px;box-shadow:1.6px 2.5px 7px rgba(7,8,8,0.35);border-radius:10px; margin:10px 5px;flex:0 1 570px;padding:25px 0 40px;
+    h1, h2{position:relative;font-weight:400;text-transform:none;line-height:1;margin-top:0}
+}
+
+.border-box {
+    &:before{content:'';position:absolute;left:10px;bottom:10px;margin-bottom:20px;margin-left:20px;display:inline-block;height:71%;width:50px;border-top:5px solid #3b3b3b;border-left:5px solid #3b3b3b; border-bottom:5px solid #3b3b3b; border-radius:20px 0 0 20px}
+    &:after{content:'';position:absolute;right:10px;bottom:10px;margin-bottom:20px;margin-right:20px;display:inline-block;height:71%;width:50px;border-top:5px solid #3b3b3b; border-right:5px solid #3b3b3b; border-bottom:5px solid #3b3b3b; border-radius:0 20px 20px 0}
+}
+.personalized:last-of-type .border-box:before, .personalized:last-of-type .border-box:after{width:100px}
+
+.list{text-align:left;display:table;margin:auto;
+    ul{padding-left:0;padding-bottom:10px;
+        li{width:100%;color:#fff;font:300 29px/1.2 $font;padding-left:32px;padding-top:10px;list-style:none; position: relative; 
+        &:before {content: '\e914'; font-family: fontello; color: $secondary; font-size: .9em; position: absolute; top: 13px; left: 3px;}
+        }
+    }
+}
+
+.looking{max-width:1140px;margin:40px auto 60px;
+    p{font-size:19px;font-weight:400;line-height:32px;margin:auto;padding:15px 40px;text-align:center;
+        span{font-size:31px;font-weight:300}
+    }
+}
+
+.bkgrd{padding:0 0 1px;background-color:#f8f8f8;position:relative}
+
+.insurance{background-color:#fff;text-align:left;padding:0 0 30px;position:relative;overflow:hidden;
+    .container{max-width:1045px;margin:auto;padding:20px;text-align:center}
+    h2{display:flex;align-items:center;position:relative;text-align:center;z-index:2;padding:10px 20px 15px;margin:10px auto -15px;justify-content:center;
+        &:before, &:after{content:'';height:2px;background-color:#000;flex:1}
+        &:before{margin-right:20px}
+        &:after{margin-left:20px}
+    }
+    .flex-ed{display:flex;justify-content:space-around;align-items:center;max-width:1040px;margin:0;
+        span {padding: 5px;}
+    }
+    p{line-height:28px;max-width:970px;margin:10px auto}
+    .disclaim{color:#898989;font:400 14px/1 $font;margin-top:20px;text-align:center}
+}
+
+#dentist{position:relative;z-index:2; margin:0 auto;padding:50px 10px;flex-wrap:nowrap;
+    article{text-align:left; }
+    figure{position:relative;}
+}
+
+.caption {background-color: #262626; position: relative; display: table;  margin: -20px auto 20px;  padding: 0 5px;
+    a{color:#fff;display:inline-block;padding:10px;text-align:center;font:400 16px/1 $font;bottom:0;margin:auto;
+        span {margin: 0 10px;}
+        &:hover{color:$secondary}
+    }
+}
 
 #reviews{background-color:#d2d2d2;padding:40px 0}
 #review-container{position:relative;background-color:#262626;box-shadow:1.6px 2.5px 7px rgba(7,8,8,0.35);max-width:980px;color:#fff;align-items:center;padding:0;margin:auto;flex-wrap:nowrap}
 
-#facebook{background-color:#fff;flex:0 1 175px;align-self:stretch;text-align:center;display:flex;flex-direction:column;justify-content:center}
-#facebook img{padding:5px 0}
-#facebook > div{margin-top:15px;padding:5px 25px}
-#facebook p{color:#fff;font-size:20px;line-height:1.25;display:block;margin-top:15px;text-shadow:1.2px 2.8px 3px rgba(7,8,8,0.11);font-size:15px;color: #3b3b3b; font-weight: 600;
-  letter-spacing: 1.5px; }
-.comment{flex:1 1 780px;padding:10px 25px;text-align:left;margin:auto}
-.comment p{font:400 italic 18px/1.466 $font; margin-top:0;margin-top:10px;margin-bottom:10px;color:#fff; letter-spacing: -0.47px; }
-.comment .caption2{float:right;font:600 normal 16px/1 $font; text-transform:uppercase;margin:5px 0 10px}
-#practice{padding:30px 15px 50px;background-color:#ffff}
-#practice h2,#practice p{text-align:left;margin:auto;max-width:970px}
-#practice h2{margin-bottom:20px}
-#practice p{margin-bottom:40px}
-#practice .container{max-width:1200px;padding-top:20px;margin:auto}
-#practice .flex-ed{justify-content:space-between;max-width:980px;margin:auto;flex-wrap:nowrap}
-#practice .flex-ed > div{margin:10px}
-#practice img{flex:0 1 auto;border-radius:10px;box-shadow:1.6px 2.5px 7px rgba(7,8,8,0.35)}
-#practice .pager span{width:17px;height:17px;background-color:#5a5a5a;border-radius:50%;display:inline-block}
-#practice .pager span + span{margin-left:14px}
-#practice .pager span.cycle-pager-active{background-color:$primary;}
+#google{background-color:#fff;flex:0 1 175px;align-self:stretch;text-align:center;display:flex;flex-direction:column;justify-content:center;
+    img{padding:5px 0}
+     > div{margin-top:15px;padding:5px 25px}
+     p{color:#fff;font-size:20px;line-height:1.25;display:block;margin-top:15px;text-shadow:1.2px 2.8px 3px rgba(7,8,8,0.11);font-size:15px;color: #3b3b3b; font-weight: 600; letter-spacing: 1.5px; }
+}
 
-footer{padding:40px 0 0;background-color:#4c4c4c;background-image:linear-gradient(to right,#2c2c2c 0%,#2c2c2c 0.5%,#474747 50%,#2c2c2c 99.5%,#2c2c2c 100%)}
-footer .split{justify-content:space-between;max-width:915px;align-items:flex-start;margin:auto;margin-bottom:30px}
-footer .split > div{margin-top:65px}
-footer h2{text-shadow:1.6px 2.5px 7px rgba(1,1,1,0.45);font:600 68px/1.2 'Oswald', sans-serif;color:#fff;text-transform:uppercase;text-align:center;margin:0 auto 20px}
-footer article{background-color:$primary;border-radius:10px;box-shadow:1.6px 2.5px 7px rgba(15,16,16,0.35);padding:0 25px 20px}
-footer article p{margin-top:20px;text-align:center;font:700 33px/1.2 $font;margin-bottom:10px;text-transform:uppercase;color:#000}
-footer article p span:first-child{font-size:39px}
-footer article p small{font-size:24px;line-height:29px}
-footer article p:last-of-type{line-height:.8}
-footer article:hover{background-color:$secondary;}
-footer article:hover p{color:#fff}
-footer figure{margin-top:10px;flex:0 1 540px;color:#fff}
-footer .frame{overflow:hidden;display:table;width:95%;margin:auto;border-radius:10px}
-footer .frame iframe{height:360px;display:block;max-width:520px;margin:auto;width:100%;border-radius:15px}
-figcaption{text-align:center}
-figcaption p{font:300 20px/1 $font; text-transform:uppercase;text-shadow:1px 1.7px 5px rgba(0,0,0,0.7);color:#fff}
-figcaption strong{margin-top:0;font-weight:700;display:block}
-figcaption:hover p{color:$primary;}
-.copy {margin-top:20px;padding:20px 10px; background-color:#262626;;margin:auto;text-transform:uppercase; font:400 12px/1.4 $font; color:#fff; }
-.copy a, .copy p {font:400 12px/1.4 $font; color:#fff; }
-.copy p {margin: 20px auto; max-width: 980px;}
-.copy a:hover{color:$secondary;text-decoration:underline}
-.copy span {margin: 0 2px;}
+.comment{flex:1 1 780px;padding:10px 25px;text-align:left;margin:auto;
+    p{font:400 italic 18px/1.466 $font; margin-top:0;margin-top:10px;margin-bottom:10px;color:#fff; letter-spacing: -0.47px; }
+    .caption2{float:right;font:600 normal 16px/1 $font; text-transform:uppercase;margin:5px 0 10px}
+}
+
+
+#practice{padding:30px 15px 50px;background-color:#ffff;
+    h2, p{text-align:left;margin:auto;max-width:970px} 
+    h2{margin-bottom:20px}
+    p{margin-bottom:40px}
+    .container{max-width:1200px;padding-top:20px;margin:auto}
+    .flex-ed{justify-content:space-between;max-width:980px;margin:auto;flex-wrap:nowrap}
+    .flex-ed > div{margin:10px}
+    img{flex:0 1 auto;border-radius:10px;box-shadow:1.6px 2.5px 7px rgba(7,8,8,0.35)}
+    .pager span{width:17px;height:17px;background-color:#5a5a5a;border-radius:50%;display:inline-block;
+       & + span{margin-left:14px}
+        &.cycle-pager-active{background-color:$primary;}
+    }
+}
+
+
+footer{overflow:hidden; padding:40px 0 0;background-color:#4c4c4c;background-image:linear-gradient(to right,#2c2c2c 0%,#2c2c2c 0.5%,#474747 50%,#2c2c2c 99.5%,#2c2c2c 100%);
+    h2{text-shadow:1.6px 2.5px 7px rgba(1,1,1,0.45);font:600 68px/1.2 'Oswald', sans-serif;color:#fff;text-transform:uppercase;text-align:center;margin:0 auto 20px}
+
+    .split{justify-content:space-between;max-width:915px;align-items:flex-start;margin:auto;margin-bottom:30px;
+        article{margin-top:65px; flex: 0 1 300px; background-color:$primary;border-radius:10px;box-shadow:1.6px 2.5px 7px rgba(15,16,16,0.35);padding:0 25px 20px;
+            p{margin-top:20px;text-align:center;font:700 33px/1.2 $font;margin-bottom:10px;text-transform:uppercase;color:#000;
+                span:first-child{font-size:39px}
+                small{font-size:24px;line-height:29px}
+                &:last-of-type{line-height:.8}
+            
+            }
+            &:hover{background-color:$secondary;}
+            &:hover p{color:#fff}
+        }
+    }
+    figure{margin-top:10px;flex:0 1 540px;color:#fff}
+}
+
+.frame{overflow:hidden;display:table;width:95%;margin:auto;border-radius:10px;
+    iframe{height:360px;display:block;max-width:520px;margin:auto;width:100%;border-radius:15px}
+}
+
+figcaption{text-align:center;
+    p{font:300 20px/1 $font; text-transform:uppercase;text-shadow:1px 1.7px 5px rgba(0,0,0,0.7);color:#fff}
+    strong{margin-top:0;font-weight:700;display:block}
+    &:hover p{color:$primary;}
+}
+
+.copy {margin-top:20px;padding:20px 10px; background-color:#262626;;margin:auto;text-transform:uppercase; font:400 12px/1.4 $font; color:#fff; 
+   a, p {font:400 12px/1.4 $font; color:#fff; }
+    p {margin: 20px auto; max-width: 980px;}
+    a:hover{color:$secondary;text-decoration:underline}
+    span {margin: 0 2px;}
+
+}
 
 ::-webkit-input-placeholder{color:#404040}
 :-ms-input-placeholder{color:#404040}
@@ -158,179 +203,193 @@ figcaption:hover p{color:$primary;}
 ::placeholder{color:#404040}
 
 
-#lp-appointment-form{max-width:850px;padding:10px;margin:20px auto;position:relative; text-align:center;}
-#lp-appointment-form h1{font-size:50px;font-weight:700;margin:10px auto 40px;color:#000}
-#lp-appointment-form >  p{max-width:700px;margin:auto;margin-bottom:30px}
-#lp-appointment-form .simple{margin:40px auto 20px;max-width:550px;padding-right:3px}
-#lp-appointment-form label{display:none}
-#lp-appointment-form input,#lp-appointment-form textarea{width:93%;display:table;margin:10px auto;background-color:#d3d3d3;color:#404040;border-radius:5px;padding:15px;font-size:16px}
-#lp-appointment-form textarea{height:200px;margin-bottom:30px}
-#lp-appointment-form textarea,#lp-appointment-form input{border:none;box-shadow:inset 0 1px 3px 0 rgba(0,0,0,0.5)}
-#lp-appointment-form textarea:focus,#lp-appointment-form input:focus{background-color:#e3e3e3}
-#lp-appointment-form textarea:focus,#lp-appointment-form input:focus,button:focus{outline-style:solid;outline-width:thin;outline-color:$secondary}
-#lp-appointment-form .submitBtn{text-align:center;width:200px;margin:auto;display:table}
+#lp-appointment-form{max-width:850px;padding:10px;margin:20px auto;position:relative; text-align:center;
+    h1{font-size:50px;font-weight:700;margin:10px auto 40px;color:#000}
+    > p{max-width:700px;margin:auto;margin-bottom:30px}
+    .simple{margin:40px auto 20px;max-width:550px;padding-right:3px}
+    label{display:none}
+    input, textarea{width:93%;display:table;margin:10px auto;background-color:#d3d3d3;color:#404040;border-radius:5px;padding:15px;font-size:16px; border:none;box-shadow:inset 0 1px 3px 0 rgba(0,0,0,0.5);
+        &:focus{background-color:#e3e3e3}
+    }
+    textarea{height:200px;margin-bottom:30px}
+    textarea:focus,  input:focus, button:focus{outline-style:solid;outline-width:thin;outline-color:$secondary}
+    .submitBtn{text-align:center;width:200px;margin:auto;display:table}
+}
+
 
 @media (max-width: 1160px) {
-    #dentist article h2,h2,#practice h2{font-size:45px}
+     h2{font-size:45px}
     .address{font-size:16px}
     .phone{font-size:32px}
     #stamp{right:auto;left:10px;top:-130px}
     #stamp img{max-width:180px}
     .border-box:before,.border-box:after{width:20px}
-    #personalized:last-of-type .border-box:before,#personalized:last-of-type .border-box:after{width:50px}
-    .over{left:-5px;top:-30px}
+    .personalized:last-of-type .border-box:before, .personalized:last-of-type .border-box:after{width:50px}
 }
-@media (max-width: 1060px) {
-    #banner h1{top:20px}
-    .border-box:before,.border-box:after{visibility:hidden}
-}
+
 @media (max-width: 1000px) {
-    header address .address{display:none}
-    header .btn-alt{margin:0; order:0}
-    header .flex-ed{justify-content:space-around}
+    header {  
+        address .address{display:none}
+        .btn-alt{margin:0; order:0}
+        .flex-ed{justify-content:space-around}
+    }
     .phone{font-size:24px}
     #stamp{top:-100px}
-    #dentist article{padding:10px}
-    #dentist{display:block;padding:10px 0 0}
-    #dentist figure{margin:auto;max-width:600px;padding:10px 10px 0}
-    h2{text-align:center}
-    .border-box:after,.border-box:before{width:50px}
-    #practice h2{text-align:center}
+    h2, #practice h2{text-align:center}
     #lists{flex-wrap:wrap;justify-content:center}
-    .border-box:before,.border-box:after{visibility:visible}
     .list ul{max-width:490px}
+    .border-box:before,.border-box:after{visibility:visible}
+    .border-box:after,.border-box:before{width:50px; bottom: 20px;}
     .bkgrd{padding:0}
+    #dentist{display:block;padding:10px 0 0;
+        article{padding:10px}
+        figure{margin:auto;max-width:600px;padding:10px 10px 0}
+    }
     #reviews{padding:0}
     #review-container{flex-wrap:wrap}
-    #facebook{flex:0 1 100%}
-    #facebook p,#facebook p img{display:inline-block;vertical-align:middle;margin:5px 5px 10px}
-    #facebook > div{margin-top:10px}
+    #google {flex:0 1 100%;
+        p, p img{display:inline-block;vertical-align:middle;margin:5px 5px 10px}
+         > div{margin-top:10px}
+    }
     #patients{display:block}
-    footer h2{font-size:50px}
-    footer .split{justify-content:center}
-    footer .split > div{margin-top:0}
+    footer  {
+        h2{font-size:50px}
+        .split{justify-content:center}
+        .split article {margin: 20px auto;}
+    }
 }
-@media (max-width: 790px) {
-    header,header > div{padding:0}
-    header .flex-ed{flex-flow:row wrap;align-items:stretch}
-    header .btn-alt,header address{flex:0 1 50%}
-    header address{display:flex;flex-flow:column}
-    header address a{text-align:center;flex:1 0 auto}
-    header .logo{width:100%;margin:10px 10px 50px;max-width:none}
-    header .logo img{margin-bottom:-35px}
-    header .btn-alt{background-color:#000;color:#fff;background-image:none;border:0;border-radius:0;box-shadow:none;text-shadow:none;padding:10px 3px}
-    header .btn-alt:hover{color:#fff;background-color:#3d3d3d}
-    header .btn-alt:after{display:none}
-    header .phone{font-size:16px;color:#fff;background-color: #eaad1b;border:0;display:flex;flex-flow:column;justify-content:center;font-weight:700;padding:8px 0}
-    header .phone:hover{background-color:#3d3d3d;color:#fff}
 
-    .appt-bar span{display:block}
-    .mobile-banner-reviews{display:block;background-color:#f3f3f3}
+@media (max-width: 790px) {
+    header {padding:0;
+        .flex-ed{flex-flow:row wrap; flex-wrap: wrap; align-items:stretch; padding: 0;}
+        .btn-alt, address{flex:0 1 50%; }
+        address{display:flex;flex-flow:column;
+            a{text-align:center;flex:1 0 auto}
+        }
+        .logo{width:100%;margin:10px;max-width:none}
+        .btn-alt{color:#000;color:#fff;background-image:none;border:0;border-radius:0;box-shadow:none;text-shadow:none;padding:10px 3px;
+            &:hover{color:#fff;background-color:#3d3d3d}
+            &:after{display:none}
+        }
+        .phone{font-size:16px;color:#fff;background-color: #eaad1b;border:0;display:flex;flex-flow:column;justify-content:center;font-weight:700;padding:8px 0;  &:hover{background-color:#3d3d3d;color:#fff}}
+    }
+
+    .safe-bar span:last-of-type{display:block; font-size: 0}
+    .mobile-banner-reviews{display:block;background-color:#f3f3f3; text-transform: uppercase;}
     .mobile-banner-reviews img,.mobile-banner-reviews p{display:inline-block;vertical-align:middle}
     .mobile-banner-reviews p{padding:0 50px}
-    #banner h1{top:25px;font-size:15px}
+    #banner {
+        .container{flex-wrap:wrap}
+        figure{margin:0;background-color:#f3f3f3;padding-bottom:0;
+            img{margin:0 auto;max-width:100%}
+        }
+        .extract{font-size:22px;color:#064164;margin-bottom:20px;display:block}
+        h1{position:static;font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.3em;color:#064367;margin-top:15px}
+    }
     #lists{display:block;margin:0 auto 20px}
-    #personalized{margin-top:-40px;border-radius:0}
-    #personalized + #personalized{background-color:#151515}
-    #practice .pager{margin-top:20px}
-    #lists > section{margin:0}
-    #banner .container{flex-wrap:wrap}
-    #banner figure{margin:0;background-color:#f3f3f3;padding-bottom:0}
-    #banner figure div{overflow:hidden}
-    #banner figure img{margin:0 auto;max-width:100%}
-    #banner .extract{font-size:22px;color:#064164;margin-bottom:20px;display:block}
-    #banner h1{position:static;font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.3em;color:#064367;margin-top:15px}
-    #stamp{position:static;display:block;max-width:100%;     background: linear-gradient(0deg, #031b1f 0%, #eaad1b 100%);min-height:260px;display:flex;align-items:center;height:42vh}
-    #stamp img{max-width:100%}
+    .list{max-width:750px;margin:30px auto 20px}
+    .personalized{margin-top:-40px;border-radius:0; margin:0}
+    .personalized + .personalized{background-color:#151515}
+    #stamp{position:static;display:block;max-width:100%;     background: linear-gradient(0deg, #031b1f 0%, #eaad1b 100%);min-height:260px;display:flex;align-items:center;height:35vh;  img{max-width:100%}}
+
     .border-box:before,.border-box:after{height:63%}
     .split p,.comment,#practice p{text-align:center}
-    #practice .flex-ed{display:block}
-    #practice .flex-ed > div{margin:0;right:0}
-    #practice img{margin:0 auto}
     #dentist figure{margin-top:-20px}
-    #personalized .list{max-width:750px;margin:30px auto 20px}
-    #practice{padding-bottom:20px}
-    footer h2{font-size:42px}
-    footer article{margin-bottom:30px}
-    footer .split > div{margin-top:0}
+    #practice{padding-bottom:20px;
+        .flex-ed{display:block;
+            > div{margin:0 auto;right:0}
+        }
+        img{margin:0 auto}
+        .pager {margin-top: 20px;}
+    }
+    footer {
+        h2{font-size:42px}
+        .split > div{margin-top:0}
+        article{margin-bottom:30px}
+    }
 }
 @media (max-width: 700px) {
-    #personalized h1,#personalized h2{font-size:36px}
-    .looking{margin:20px auto}
-    .looking p{padding:14px 10px;font-size:18px;line-height:1.45}
-    .looking p span{font-size:24px}
+    .personalized h1, .personalized h2{font-size:36px}
+    .looking{margin:20px auto;
+        p{padding:14px 20px;font-size:18px;line-height:1.45;
+            span{font-size:24px}
+        }
+    }
     .insurance{padding:0}
-    #facebook > div{margin-top:20px}
-    #facebook p{margin-bottom:0}
+    #google > div{margin-top:20px}
+    #google p{margin-bottom:0}
     #reviews{padding:0}
     .comment .caption2{margin-top:0}
     #lp-appointment-form h1{font-size:36px}
 
 }
 @media (max-width: 590px) {
-    h2,#practice h2,#patients h2{text-align:center;font-size:36px;line-height:1.2;margin-top:10px}
+    h2,#practice h2 {text-align:center;font-size:36px;line-height:1.2;margin-top:10px}
     h2 span{font-size:26px}
-    .appt-bar{letter-spacing:0}
-    .appt-bar strong:nth-of-type(2){display:block}
-    #personalized{padding:20px 10px}
-    #personalized .list{max-width:360px}
+    .safe-bar{letter-spacing:0 ;font-size: 16px;
+        span {margin: 0;}
+    }
+    .personalized{padding:20px 10px}
+    .personalized .list{max-width:360px}
     .list ul li{font-size:24px;padding-top:14px}
     .even figure{margin:0 auto}
-    #personalized p{padding:0 10px}
-    footer h2{font-size:40px;margin-top:0;padding:0 10px}
-    footer article{padding-top:20px}
-    footer article p{font-size:32px;margin-top:5px}
-    .icon-phone{font-size:30px}
-    footer article p big{line-height:1}
-    footer .frame{max-width:98%;margin:auto}
-    footer .frame iframe{display:none}
-    footer figure{margin-top:-10px}
+    .personalized p{padding:0 10px}
+    footer {
+        h2{font-size:40px;margin-top:0;padding:0 10px}
+        article{padding-top:20px;
+            p{font-size:32px;margin-top:5px}
+        }
+        figure{margin-top:-10px}
+    }
+    .frame{max-width:98%;margin:auto; iframe{display:none;}}
+
     figcaption{margin-top:0}
+    .icon-phone{font-size:30px}
     .copy{padding:30px 10px 20px}
 }
 @media (max-width: 480px) {
-    #personalized h1,#personalized h2{font-size:32px}
+    .personalized h1,.personalized h2{font-size:32px}
     #lists > section{padding:10px 0}
-    #personalized .list{margin:0 auto}
+    .personalized .list{margin:0 auto}
     .list ul li{background-position:0 10px}
     #dentist article h2,h2,#practice h2,footer h2{font-size:36px}
     #practice .container{padding:0}
     .border-box:before{left:0;bottom:0}
     .border-box:after{right:0;bottom:0}
     .bkgrd{padding-bottom:25px}
-
-    .appt-bar strong:nth-of-type(2){display:block}
     .border-box:before,.border-box:after{display:none}
     #dentist figure{margin-bottom:-1px}
     .copy span:last-of-type {display: block; font-size: 0;;}
-    #lp-appointment-form h1{font-size:28px}
 }
 @media (max-width: 400px) {
     header .btn-alt{font-size:14px}
-    .appt-bar{font-size:15px}
-    .appt-bar strong:nth-of-type(2),.appt-bar span{display:inline}
-    #personalized h1,#personalized h2{font-size:26px}
-    h1 span,#personalized h2 span{font-size:24px}
-    #personalized .btn-alt{padding:13px 45px 13px 10px}
-    #personalized{padding:20px 10px}
-    #personalized p,figcaption p{font-size:18px}
-    #personalized li{line-height:1;padding-bottom:5px;}
-    .list ul{padding-left:0}
-    .list ul li{background-position:5px 12px;background-size:20px}
+    .mobile-banner-reviews p{padding:0 30px; font-size:14px}
+    .safe-bar{font-size:15px}
+    .personalized { padding:20px 10px;
+        h1, h2 {font-size:26px;
+            span {font-size: 24px;}
+        }
+        p,figcaption p{font-size:18px}
+        li{line-height:1;padding-bottom:5px;}
+    }
+    .list ul{padding-left:0;
+        li{background-position:5px 12px;background-size:20px}
+    }
     .comment p{font-size:16px;letter-spacing:1px}
     .comment .caption2{font-size:15px}
-    #dentist,#patients{margin-top:20px}
-    #dentist article h2,h2,#practice h2{font-size:28px}
-    #dentist .caption{font-size:14px}
-
-    .mobile-banner-reviews p{padding:0 30px}
-    .insurance h2{font-size:28px;margin:10px 0 -15px;padding:10px 0 15px}
-    .insurance .flex-ed div{margin:15px 18px;flex:1 1 100%}
-    .mobile-banner-reviews p{font-size:14px}
-    #facebook p{font-size:14px}
-    footer{overflow:hidden}
-    footer h2{font-size:30px;margin-bottom:0}
-    footer article{transform:scale(0.9);margin-bottom:0;padding:20px}
-    footer article p bold{font-size:30px}
-    footer article p big{font-size:32px}
+    #dentist {margin-top:20px;
+          .caption{font-size:14px}
+    }
+    .insurance {
+        h2{font-size:28px;margin:10px 0 -15px;padding:10px 0 15px}
+        .flex-ed div{margin:15px 18px;flex:1 1 100%}
+    }
+    #google p{font-size:14px}
+    footer{
+       h2{font-size:30px;margin-bottom:0}
+       article{transform:scale(0.9);margin-bottom:0;padding:20px;
+          p strong{font-size:30px}
+          p big{font-size:32px}
+      }
+    }
 }
