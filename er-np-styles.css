@@ -445,8 +445,8 @@ footer {
     font-size: 13px;
     font-weight: 700;
     font-family: "Barlow", sans-serif;
-    background-color: #eaba47;
-    color: #000;
+    background-color: #febc20;
+    color: #fff;
     text-transform: uppercase;
   }
   #fixed-tabs a span {
@@ -457,7 +457,7 @@ footer {
     margin-left: 7px;
   }
   #fixed-tabs a:nth-of-type(2) {
-    background-color: #17c8e2;
+    background-color: #12aac0;
   }
   #fixed-tabs i {
     font-size: 16px;
@@ -522,12 +522,13 @@ h1 span, h1 h2 span, .personalized h2 span, .personalized h2 h2 span {
 }
 
 h2 {
-  color: #000;
+  color: #323232;
   text-align: left;
   font-size: 40px;
   line-height: 52px;
   letter-spacing: -1px;
   font-weight: 300;
+  line-height: 1.2;
 }
 
 h3 {
@@ -571,7 +572,7 @@ header address a {
 }
 
 .address {
-  color: #000;
+  color: #323232;
   font-size: 18px;
   line-height: 1.25;
   font-weight: 400;
@@ -594,12 +595,8 @@ header address a {
   left: 0;
   top: 0;
   right: 0;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: slideIn;
-  animation-name: slideIn;
+  -webkit-animation: slideIn .8s both;
+          animation: slideIn .8s both;
   -webkit-box-shadow: 1.6px 2.5px 7px rgba(6, 7, 7, 0.35);
           box-shadow: 1.6px 2.5px 7px rgba(6, 7, 7, 0.35);
 }
@@ -610,7 +607,7 @@ header address a {
   display: inline-block;
   margin: 3px auto;
   padding: 12px 15px;
-  color: #000;
+  color: #323232;
   border-radius: 20px;
   font: 900 15px/1 "Barlow", sans-serif;
   -webkit-transition: border .3s;
@@ -620,9 +617,9 @@ header address a {
           box-shadow: 1.6px 2.5px 7px rgba(2, 2, 2, 0.35);
 }
 
-.btn-alt:hover, .btn:hover {
+.btn:hover, .btn:hover, .btn-alt:hover, .btn-alt:hover {
   background-color: #fecb53;
-  color: #000;
+  color: #323232;
 }
 
 .btn-alt:after {
@@ -943,6 +940,7 @@ header address a {
   display: table;
   margin: -20px auto 20px;
   padding: 0 5px;
+  color: #fff;
 }
 
 .caption a {
@@ -1021,7 +1019,7 @@ header address a {
   margin-top: 15px;
   text-shadow: 1.2px 2.8px 3px rgba(7, 8, 8, 0.11);
   font-size: 15px;
-  color: #3b3b3b;
+  color: #323232;
   font-weight: 600;
   letter-spacing: 1.5px;
 }
@@ -1262,19 +1260,19 @@ figcaption:hover p {
 }
 
 ::-webkit-input-placeholder {
-  color: #404040;
+  color: #323232;
 }
 
 :-ms-input-placeholder {
-  color: #404040;
+  color: #323232;
 }
 
 ::-ms-input-placeholder {
-  color: #404040;
+  color: #323232;
 }
 
 ::placeholder {
-  color: #404040;
+  color: #323232;
 }
 
 #lp-appointment-form {
@@ -1289,7 +1287,7 @@ figcaption:hover p {
   font-size: 50px;
   font-weight: 700;
   margin: 10px auto 40px;
-  color: #000;
+  color: #323232;
 }
 
 #lp-appointment-form > p {
@@ -1313,7 +1311,7 @@ figcaption:hover p {
   display: table;
   margin: 10px auto;
   background-color: #d3d3d3;
-  color: #404040;
+  color: #323232;
   border-radius: 5px;
   padding: 15px;
   font-size: 16px;
@@ -1523,7 +1521,7 @@ figcaption:hover p {
   header .phone {
     font-size: 16px;
     color: #fff;
-    background-color: #eaad1b;
+    background-color: #fecb53;
     border: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1557,6 +1555,7 @@ figcaption:hover p {
   }
   .mobile-banner-reviews p {
     padding: 0 50px;
+    font-weight: 700;
   }
   #banner .container {
     -ms-flex-wrap: wrap;
@@ -1606,9 +1605,9 @@ figcaption:hover p {
     position: static;
     display: block;
     max-width: 100%;
-    background: -webkit-gradient(linear, left bottom, left top, from(#031b1f), to(#eaad1b));
-    background: linear-gradient(0deg, #031b1f 0%, #eaad1b 100%);
-    min-height: 260px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#031b1f), to(#1bcfea));
+    background: linear-gradient(0deg, #031b1f 0%, #1bcfea 100%);
+    min-height: 280px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1692,14 +1691,9 @@ figcaption:hover p {
 }
 
 @media (max-width: 590px) {
-  h2, #practice h2 {
-    text-align: center;
+  h2 {
     font-size: 36px;
-    line-height: 1.2;
     margin-top: 10px;
-  }
-  h2 span {
-    font-size: 26px;
   }
   .safe-bar {
     letter-spacing: 0;
@@ -1712,17 +1706,10 @@ figcaption:hover p {
     padding: 20px 10px;
   }
   .personalized .list {
-    max-width: 360px;
+    margin: 10px auto;
   }
   .list ul li {
     font-size: 24px;
-    padding-top: 14px;
-  }
-  .even figure {
-    margin: 0 auto;
-  }
-  .personalized p {
-    padding: 0 10px;
   }
   footer h2 {
     font-size: 40px;
@@ -1749,9 +1736,6 @@ figcaption:hover p {
   figcaption {
     margin-top: 0;
   }
-  .icon-phone {
-    font-size: 30px;
-  }
   .copy {
     padding: 30px 10px 20px;
   }
@@ -1761,37 +1745,17 @@ figcaption:hover p {
   .personalized h1, .personalized h2 {
     font-size: 32px;
   }
-  #lists > section {
-    padding: 10px 0;
-  }
-  .personalized .list {
-    margin: 0 auto;
-  }
-  .list ul li {
-    background-position: 0 10px;
-  }
-  #dentist article h2, h2, #practice h2, footer h2 {
+  h2, footer h2 {
     font-size: 36px;
   }
   #practice .container {
     padding: 0;
   }
-  .border-box:before {
-    left: 0;
-    bottom: 0;
-  }
-  .border-box:after {
-    right: 0;
-    bottom: 0;
-  }
-  .bkgrd {
-    padding-bottom: 25px;
-  }
   .border-box:before, .border-box:after {
     display: none;
   }
-  #dentist figure {
-    margin-bottom: -1px;
+  .bkgrd {
+    padding-bottom: 25px;
   }
   .copy span:last-of-type {
     display: block;
@@ -1805,19 +1769,13 @@ figcaption:hover p {
   }
   .mobile-banner-reviews p {
     padding: 0 30px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .safe-bar {
     font-size: 15px;
   }
   .personalized {
     padding: 20px 10px;
-  }
-  .personalized h1, .personalized h2 {
-    font-size: 26px;
-  }
-  .personalized h1 span, .personalized h2 span {
-    font-size: 24px;
   }
   .personalized p, .personalized figcaption p {
     font-size: 18px;
@@ -1826,13 +1784,6 @@ figcaption:hover p {
     line-height: 1;
     padding-bottom: 5px;
   }
-  .list ul {
-    padding-left: 0;
-  }
-  .list ul li {
-    background-position: 5px 12px;
-    background-size: 20px;
-  }
   .comment p {
     font-size: 16px;
     letter-spacing: 1px;
@@ -1840,14 +1791,13 @@ figcaption:hover p {
   .comment .caption2 {
     font-size: 15px;
   }
-  #dentist {
-    margin-top: 20px;
-  }
   #dentist .caption {
     font-size: 14px;
   }
+  h2 {
+    font-size: 32px;
+  }
   .insurance h2 {
-    font-size: 28px;
     margin: 10px 0 -15px;
     padding: 10px 0 15px;
   }
@@ -1860,20 +1810,17 @@ figcaption:hover p {
   #google p {
     font-size: 14px;
   }
-  footer h2 {
-    font-size: 30px;
-    margin-bottom: 0;
-  }
-  footer article {
+  footer .split article {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
     margin-bottom: 0;
-    padding: 20px;
+    padding: 0 20px 20px;
+    margin-top: 0;
   }
-  footer article p strong {
+  footer .split article p strong {
     font-size: 30px;
   }
-  footer article p big {
+  footer .split article p big {
     font-size: 32px;
   }
 }
