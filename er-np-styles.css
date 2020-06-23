@@ -445,7 +445,7 @@ footer {
     font-size: 13px;
     font-weight: 700;
     font-family: "Barlow", sans-serif;
-    background-color: #febc20;
+    background-color: #273055;
     color: #fff;
     text-transform: uppercase;
   }
@@ -457,7 +457,7 @@ footer {
     margin-left: 7px;
   }
   #fixed-tabs a:nth-of-type(2) {
-    background-color: #12aac0;
+    background-color: #107883;
   }
   #fixed-tabs i {
     font-size: 16px;
@@ -490,7 +490,7 @@ body {
 
 p {
   font: 400 18px/28px "Barlow", sans-serif;
-  color: #323232;
+  color: #545454;
 }
 
 a {
@@ -522,7 +522,7 @@ h1 span, h1 h2 span, .personalized h2 span, .personalized h2 h2 span {
 }
 
 h2 {
-  color: #323232;
+  color: #545454;
   text-align: left;
   font-size: 40px;
   line-height: 52px;
@@ -572,21 +572,21 @@ header address a {
 }
 
 .address {
-  color: #323232;
+  color: #545454;
   font-size: 18px;
   line-height: 1.25;
   font-weight: 400;
 }
 
 .phone {
-  color: #1bcfea;
+  color: #15a1b1;
   font-size: 38px;
   line-height: 1.1;
   font-weight: 900;
 }
 
 .address:hover, .phone:hover {
-  color: #fecb53;
+  color: #374478;
 }
 
 .fix-nav header {
@@ -607,19 +607,19 @@ header address a {
   display: inline-block;
   margin: 3px auto;
   padding: 12px 15px;
-  color: #323232;
+  color: #545454;
   border-radius: 20px;
   font: 900 15px/1 "Barlow", sans-serif;
   -webkit-transition: border .3s;
   transition: border .3s;
-  background-color: #1bcfea;
+  background-color: #15a1b1;
   -webkit-box-shadow: 1.6px 2.5px 7px rgba(2, 2, 2, 0.35);
           box-shadow: 1.6px 2.5px 7px rgba(2, 2, 2, 0.35);
 }
 
 .btn:hover, .btn:hover, .btn-alt:hover, .btn-alt:hover {
-  background-color: #fecb53;
-  color: #323232;
+  background-color: #374478;
+  color: #545454;
 }
 
 .btn-alt:after {
@@ -806,7 +806,7 @@ header address a {
 .list ul li:before {
   content: '\e914';
   font-family: fontello;
-  color: #fecb53;
+  color: #374478;
   font-size: .9em;
   position: absolute;
   top: 13px;
@@ -958,7 +958,7 @@ header address a {
 }
 
 .caption a:hover {
-  color: #fecb53;
+  color: #374478;
 }
 
 #reviews {
@@ -1019,7 +1019,7 @@ header address a {
   margin-top: 15px;
   text-shadow: 1.2px 2.8px 3px rgba(7, 8, 8, 0.11);
   font-size: 15px;
-  color: #323232;
+  color: #545454;
   font-weight: 600;
   letter-spacing: 1.5px;
 }
@@ -1110,7 +1110,7 @@ header address a {
 }
 
 #practice .pager span.cycle-pager-active {
-  background-color: #1bcfea;
+  background-color: #15a1b1;
 }
 
 footer {
@@ -1147,7 +1147,7 @@ footer .split article {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 300px;
           flex: 0 1 300px;
-  background-color: #1bcfea;
+  background-color: #15a1b1;
   border-radius: 10px;
   -webkit-box-shadow: 1.6px 2.5px 7px rgba(15, 16, 16, 0.35);
           box-shadow: 1.6px 2.5px 7px rgba(15, 16, 16, 0.35);
@@ -1177,7 +1177,7 @@ footer .split article p:last-of-type {
 }
 
 footer .split article:hover {
-  background-color: #fecb53;
+  background-color: #374478;
 }
 
 footer .split article:hover p {
@@ -1227,7 +1227,7 @@ figcaption strong {
 }
 
 figcaption:hover p {
-  color: #1bcfea;
+  color: #15a1b1;
 }
 
 .copy {
@@ -1251,7 +1251,7 @@ figcaption:hover p {
 }
 
 .copy a:hover {
-  color: #fecb53;
+  color: #374478;
   text-decoration: underline;
 }
 
@@ -1260,19 +1260,19 @@ figcaption:hover p {
 }
 
 ::-webkit-input-placeholder {
-  color: #323232;
+  color: #545454;
 }
 
 :-ms-input-placeholder {
-  color: #323232;
+  color: #545454;
 }
 
 ::-ms-input-placeholder {
-  color: #323232;
+  color: #545454;
 }
 
 ::placeholder {
-  color: #323232;
+  color: #545454;
 }
 
 #lp-appointment-form {
@@ -1287,7 +1287,7 @@ figcaption:hover p {
   font-size: 50px;
   font-weight: 700;
   margin: 10px auto 40px;
-  color: #323232;
+  color: #545454;
 }
 
 #lp-appointment-form > p {
@@ -1311,7 +1311,7 @@ figcaption:hover p {
   display: table;
   margin: 10px auto;
   background-color: #d3d3d3;
-  color: #323232;
+  color: #545454;
   border-radius: 5px;
   padding: 15px;
   font-size: 16px;
@@ -1332,7 +1332,7 @@ figcaption:hover p {
 #lp-appointment-form textarea:focus, #lp-appointment-form input:focus, #lp-appointment-form button:focus {
   outline-style: solid;
   outline-width: thin;
-  outline-color: #fecb53;
+  outline-color: #374478;
 }
 
 #lp-appointment-form .submitBtn {
@@ -1521,7 +1521,7 @@ figcaption:hover p {
   header .phone {
     font-size: 16px;
     color: #fff;
-    background-color: #fecb53;
+    background-color: #374478;
     border: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1605,8 +1605,8 @@ figcaption:hover p {
     position: static;
     display: block;
     max-width: 100%;
-    background: -webkit-gradient(linear, left bottom, left top, from(#031b1f), to(#1bcfea));
-    background: linear-gradient(0deg, #031b1f 0%, #1bcfea 100%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#031b1f), to(#15a1b1));
+    background: linear-gradient(0deg, #031b1f 0%, #15a1b1 100%);
     min-height: 280px;
     display: -webkit-box;
     display: -ms-flexbox;

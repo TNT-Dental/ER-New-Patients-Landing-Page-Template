@@ -2,10 +2,10 @@
 .animated{-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes slideIn{from{transform:translate3d(0,-100%,0)}to{transform:translate3d(0,0,0)}}@keyframes slideIn{from{transform:translate3d(0,-100%,0)}to{transform:translate3d(0,0,0)}}@-webkit-keyframes fadeInUp{from{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}@keyframes fadeInUp{from{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}@-webkit-keyframes fadeInRight{from{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:none}}@keyframes fadeInRight{from{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:none}}.fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight}@-webkit-keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:none}}@keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:none}}.fadeInLeft{-webkit-animation-name:fadeInLeft;animation-name:fadeInLeft}
 .star:before{font-size:1.5em;font-family:'fontello';font-weight:400;margin:0;font-style:normal;content:'\e80f \e80f \e80f \e80f \e80f';color:#fed641;text-shadow:1.2px 2.8px 3px rgba(7,8,8,0.11)}
 
-$primary: #1bcfea;
-$secondary:#fecb53;
+$primary: #15a1b1;
+$secondary:#374478;
 $font: "Barlow", sans-serif;
-$text: #323232;
+$text: #545454; 
 
 
 @media (min-width: 1031px) {
@@ -15,7 +15,7 @@ $text: #323232;
     #fixed-tabs{position:fixed;right:0;text-align:center;line-height:1;font-size:0;z-index:10000; bottom:0;width:100%;box-shadow:0 0 15px rgba(0,0,0,0.3); display:flex;
        a{padding:13px 0;flex:1; font-size:13px;font-weight:700;font-family: $font;background-color: darken($secondary, 10%);color:#fff;text-transform:uppercase; 
           span{display:inline-block;vertical-align:middle;
-            &:last-child{margin-left:7px}
+            &:last-child{margin-left:7px} 
            } 
            &:nth-of-type(2){background-color:darken($primary, 10%); }
         }
