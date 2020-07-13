@@ -95,7 +95,7 @@ sub {
 }
 
 sup {
-  top: -.45em;
+  top: -.65em;
 }
 
 img {
@@ -445,7 +445,7 @@ footer {
     font-size: 13px;
     font-weight: 700;
     font-family: "Barlow", sans-serif;
-    background-color: #273055;
+    background-color: #2e0348;
     color: #fff;
     text-transform: uppercase;
   }
@@ -457,7 +457,7 @@ footer {
     margin-left: 7px;
   }
   #fixed-tabs a:nth-of-type(2) {
-    background-color: #107883;
+    background-color: #058777;
   }
   #fixed-tabs i {
     font-size: 16px;
@@ -483,14 +483,14 @@ footer {
 
 body {
   position: relative;
-  background-color: #f8f8f8;
+  background-color: #fff;
   font-family: "Barlow", sans-serif;
   text-align: center;
 }
 
 p {
   font: 400 18px/28px "Barlow", sans-serif;
-  color: #545454;
+  color: #323232;
 }
 
 a {
@@ -507,33 +507,51 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-h1, .personalized h2 {
+h1 {
   margin: 0;
   text-align: center;
-  color: #fff;
-  font: 400 44px/1.1 "Barlow", sans-serif;
-}
-
-h1 span, h1 h2 span, .personalized h2 span, .personalized h2 h2 span {
-  font-family: "Barlow", sans-serif;
-  font-size: 26px;
-  font-weight: 300;
-  display: block;
+  color: #4e0579;
+  font: 500 43px/1.1 "Heebo", sans-serif;
 }
 
 h2 {
-  color: #545454;
+  color: #4e0579;
   text-align: left;
-  font-size: 40px;
-  line-height: 52px;
+  font: 500 38px/1.1 "Heebo", sans-serif;
+}
+
+.offer .h1 {
+  color: #07b8a3;
+  font: 500 60px/1 "Heebo", sans-serif;
   letter-spacing: -1px;
-  font-weight: 300;
-  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.offer .h1 sup small {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  text-transform: none;
+  text-align: left;
 }
 
 h3 {
   font-size: 32px;
   line-height: 1.41;
+}
+
+.h3 {
+  color: #000;
+  font: 500 24px/1 "Heebo", sans-serif;
+}
+
+.h4 {
+  letter-spacing: 2.4px;
+  color: #07b8a3;
+  font: 700 12px/1.1 "Heebo", sans-serif;
+  text-transform: uppercase;
+  margin-top: 10px;
 }
 
 header {
@@ -572,21 +590,21 @@ header address a {
 }
 
 .address {
-  color: #545454;
+  color: #323232;
   font-size: 18px;
   line-height: 1.25;
   font-weight: 400;
 }
 
 .phone {
-  color: #15a1b1;
-  font-size: 38px;
+  color: #07b8a3;
+  font-size: 34px;
   line-height: 1.1;
   font-weight: 900;
 }
 
 .address:hover, .phone:hover {
-  color: #374478;
+  color: #4e0579;
 }
 
 .fix-nav header {
@@ -606,20 +624,23 @@ header address a {
   position: relative;
   display: inline-block;
   margin: 3px auto;
-  padding: 12px 15px;
-  color: #545454;
+  padding: 10px 15px;
+  color: #323232;
   border-radius: 20px;
-  font: 900 15px/1 "Barlow", sans-serif;
+  font: 500 17px/1 "Heebo", sans-serif;
   -webkit-transition: border .3s;
   transition: border .3s;
-  background-color: #15a1b1;
-  -webkit-box-shadow: 1.6px 2.5px 7px rgba(2, 2, 2, 0.35);
-          box-shadow: 1.6px 2.5px 7px rgba(2, 2, 2, 0.35);
+  background-color: #07b8a3;
+  -webkit-box-shadow: 2px 3px 13px rgba(3, 47, 42, 0.2);
+          box-shadow: 2px 3px 13px rgba(3, 47, 42, 0.2);
+  border-radius: 20px;
+  border: 2px solid #05796b;
 }
 
 .btn:hover, .btn:hover, .btn-alt:hover, .btn-alt:hover {
-  background-color: #374478;
-  color: #545454;
+  background-color: #4e0579;
+  border-color: #4e0579;
+  color: #fff;
 }
 
 .btn-alt:after {
@@ -648,8 +669,13 @@ header address a {
 .split article {
   margin: 10px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 550px;
-          flex: 0 1 550px;
+      -ms-flex: 0 1 520px;
+          flex: 0 1 520px;
+  text-align: justify;
+}
+
+.split p {
+  text-align: justify;
 }
 
 .split figure img {
@@ -669,157 +695,118 @@ header address a {
 .safe-bar {
   width: 100%;
   position: relative;
-  background-color: #fecb53;
+  background-color: #fdd955;
   z-index: 10;
-  -webkit-box-shadow: 1.6px 2.5px 13px rgba(7, 8, 8, 0.35);
-  box-shadow: 1.6px 2.5px 13px rgba(7, 8, 8, 0.35);
   color: #000;
-  font: 700 18px/1.2 "Barlow", sans-serif;
+  font: 500 18px/1.2 "Heebo", sans-serif;
   padding: 7px 10px;
   text-align: center;
+  letter-spacing: -.7px;
 }
 
 .safe-bar span {
   margin: 0 10px;
 }
 
+.safe-bar:hover {
+  background-color: #07b8a3;
+  color: #fff;
+}
+
 #banner {
   overflow: hidden;
+  background: url("assets/images/er-np-banner-bkg.jpg") center bottom;
+  background-size: cover;
 }
 
-#banner figure {
-  margin-top: 0;
-  padding-bottom: 20px;
+#banner h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
+  text-align: center;
+  z-index: 2;
+  padding: 10px 20px 25px;
+  margin: 10px auto -15px;
+  max-width: 1060px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#banner figure img {
-  position: relative;
-  width: 100%;
+#banner h1:before, #banner h1:after {
+  content: '';
+  height: 2px;
+  background-color: #4e0579;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 5px;
 }
 
-#lists {
-  position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+#banner h1:before {
+  margin-right: 20px;
+}
+
+#banner h1:after {
+  margin-left: 20px;
+}
+
+#banner .contain {
+  padding: 50px 20px 30px;
+}
+
+#banner .flex-ed {
+  max-width: 1090px;
+  margin: 20px auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  max-width: 1190px;
-  margin: -90px auto 20px;
 }
 
-#lists sup {
-  top: -.7em;
-}
-
-#stamp {
-  position: absolute;
-  z-index: 2;
-  top: -135px;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.personalized {
+.offer {
+  display: block;
+  margin: 10px;
   position: relative;
-  margin: auto;
-  max-width: 1040px;
-  background-color: #262626;
-  padding: 20px 10px 30px;
-  -webkit-box-shadow: 1.6px 2.5px 7px rgba(7, 8, 8, 0.35);
-          box-shadow: 1.6px 2.5px 7px rgba(7, 8, 8, 0.35);
-  border-radius: 10px;
-  margin: 10px 5px;
+  text-align: center;
+  -webkit-box-shadow: 2px 3px 13px rgba(197, 212, 222, 0.75);
+          box-shadow: 2px 3px 13px rgba(197, 212, 222, 0.75);
+  border-radius: 8px;
+  background-color: #fff;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 570px;
-          flex: 0 1 570px;
-  padding: 25px 0 40px;
+      -ms-flex: 0 1 250px;
+          flex: 0 1 250px;
+  padding: 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.personalized h1, .personalized h2 {
-  position: relative;
-  font-weight: 400;
-  text-transform: none;
-  line-height: 1;
-  margin-top: 0;
+.offer p {
+  font-size: 14px;
+  margin: 0 auto 15px;
+  line-height: 1.3;
 }
 
-.border-box:before {
-  content: '';
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  display: inline-block;
-  height: 71%;
-  width: 50px;
-  border-top: 5px solid #3b3b3b;
-  border-left: 5px solid #3b3b3b;
-  border-bottom: 5px solid #3b3b3b;
-  border-radius: 20px 0 0 20px;
-}
-
-.border-box:after {
-  content: '';
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  display: inline-block;
-  height: 71%;
-  width: 50px;
-  border-top: 5px solid #3b3b3b;
-  border-right: 5px solid #3b3b3b;
-  border-bottom: 5px solid #3b3b3b;
-  border-radius: 0 20px 20px 0;
-}
-
-.personalized:last-of-type .border-box:before, .personalized:last-of-type .border-box:after {
-  width: 100px;
-}
-
-.list {
-  text-align: left;
-  display: table;
-  margin: auto;
-}
-
-.list ul {
-  padding-left: 0;
-  padding-bottom: 10px;
-}
-
-.list ul li {
-  width: 100%;
-  color: #fff;
-  font: 300 29px/1.2 "Barlow", sans-serif;
-  padding-left: 32px;
-  padding-top: 10px;
-  list-style: none;
-  position: relative;
-}
-
-.list ul li:before {
-  content: '\e914';
-  font-family: fontello;
-  color: #374478;
-  font-size: .9em;
-  position: absolute;
-  top: 13px;
-  left: 3px;
+.offer img {
+  margin: auto auto 0;
 }
 
 .looking {
   max-width: 1140px;
-  margin: 40px auto 60px;
+  margin: 30px auto 40px;
 }
 
 .looking p {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 32px;
   margin: auto;
@@ -833,15 +820,14 @@ header address a {
 }
 
 .bkgrd {
-  padding: 0 0 1px;
-  background-color: #f8f8f8;
+  background-color: #fff;
   position: relative;
 }
 
 .insurance {
-  background-color: #fff;
+  background-color: #f5f8fa;
   text-align: left;
-  padding: 0 0 30px;
+  padding: 0 0 20px;
   position: relative;
   overflow: hidden;
 }
@@ -873,7 +859,7 @@ header address a {
 .insurance h2:before, .insurance h2:after {
   content: '';
   height: 2px;
-  background-color: #000;
+  background-color: #4e0579;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -891,17 +877,21 @@ header address a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1040px;
-  margin: 0;
+  max-width: 610px;
+  margin: 0 auto;
 }
 
 .insurance .flex-ed span {
-  padding: 5px;
+  padding: 10px 8px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 150px;
+          flex: 0 1 150px;
 }
 
 .insurance p {
@@ -917,11 +907,15 @@ header address a {
   text-align: center;
 }
 
+#no-insure {
+  background-color: #f2e9f8;
+}
+
 #dentist {
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  padding: 50px 10px;
+  padding: 50px 10px 30px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
@@ -941,6 +935,7 @@ header address a {
   margin: -20px auto 20px;
   padding: 0 5px;
   color: #fff;
+  letter-spacing: -.5px;
 }
 
 .caption a {
@@ -953,24 +948,25 @@ header address a {
   margin: auto;
 }
 
-.caption a span {
-  margin: 0 10px;
+.caption a:hover {
+  color: #07b8a3;
 }
 
-.caption a:hover {
-  color: #374478;
+.caption span {
+  margin: 0 2px;
+  color: #07b8a3;
 }
 
 #reviews {
-  background-color: #d2d2d2;
+  background-color: #f5f8fa;
   padding: 40px 0;
 }
 
 #review-container {
   position: relative;
   background-color: #262626;
-  -webkit-box-shadow: 1.6px 2.5px 7px rgba(7, 8, 8, 0.35);
-          box-shadow: 1.6px 2.5px 7px rgba(7, 8, 8, 0.35);
+  -webkit-box-shadow: 1.6px 2.5px 7px rgba(7, 8, 8, 0.15);
+          box-shadow: 1.6px 2.5px 7px rgba(7, 8, 8, 0.15);
   max-width: 980px;
   color: #fff;
   -webkit-box-align: center;
@@ -980,6 +976,52 @@ header address a {
   margin: auto;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+.over {
+  width: 71px;
+  height: 71px;
+  border-radius: 50%;
+  color: #000;
+  font: 500 15px/1 "Heebo", sans-serif;
+  text-transform: uppercase;
+  -webkit-box-shadow: 2px 3px 13px rgba(3, 47, 42, 0.2);
+          box-shadow: 2px 3px 13px rgba(3, 47, 42, 0.2);
+  border: 2px solid #05796b;
+  background-color: #07b8a3;
+  text-align: center;
+  padding: 15px 10px 10px;
+  height: 80px;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -20px;
+  left: -50px;
+}
+
+.over span {
+  display: block;
+  font-size: 25px;
+}
+
+.over small {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: -.4px;
+  margin-bottom: 5px;
 }
 
 #google {
@@ -1019,7 +1061,7 @@ header address a {
   margin-top: 15px;
   text-shadow: 1.2px 2.8px 3px rgba(7, 8, 8, 0.11);
   font-size: 15px;
-  color: #545454;
+  color: #323232;
   font-weight: 600;
   letter-spacing: 1.5px;
 }
@@ -1110,12 +1152,12 @@ header address a {
 }
 
 #practice .pager span.cycle-pager-active {
-  background-color: #15a1b1;
+  background-color: #07b8a3;
 }
 
 footer {
   overflow: hidden;
-  padding: 40px 0 0;
+  padding: 60px 0 0;
   background-color: #4c4c4c;
   background-image: -webkit-gradient(linear, left top, right top, from(#2c2c2c), color-stop(0.5%, #2c2c2c), color-stop(50%, #474747), color-stop(99.5%, #2c2c2c), to(#2c2c2c));
   background-image: linear-gradient(to right, #2c2c2c 0%, #2c2c2c 0.5%, #474747 50%, #2c2c2c 99.5%, #2c2c2c 100%);
@@ -1123,9 +1165,8 @@ footer {
 
 footer h2 {
   text-shadow: 1.6px 2.5px 7px rgba(1, 1, 1, 0.45);
-  font: 600 68px/1.2 'Oswald', sans-serif;
+  font: 500 65px/1.2 "Heebo", sans-serif;
   color: #fff;
-  text-transform: uppercase;
   text-align: center;
   margin: 0 auto 20px;
 }
@@ -1147,11 +1188,12 @@ footer .split article {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 300px;
           flex: 0 1 300px;
-  background-color: #15a1b1;
+  background-color: #07b8a3;
   border-radius: 10px;
   -webkit-box-shadow: 1.6px 2.5px 7px rgba(15, 16, 16, 0.35);
           box-shadow: 1.6px 2.5px 7px rgba(15, 16, 16, 0.35);
   padding: 0 25px 20px;
+  text-align: center;
 }
 
 footer .split article p {
@@ -1161,6 +1203,7 @@ footer .split article p {
   margin-bottom: 10px;
   text-transform: uppercase;
   color: #000;
+  text-align: center;
 }
 
 footer .split article p span:first-child {
@@ -1177,11 +1220,15 @@ footer .split article p:last-of-type {
 }
 
 footer .split article:hover {
-  background-color: #374478;
+  background-color: #4e0579;
 }
 
 footer .split article:hover p {
   color: #fff;
+}
+
+footer .split figure p {
+  text-align: center;
 }
 
 footer figure {
@@ -1214,7 +1261,7 @@ figcaption {
 }
 
 figcaption p {
-  font: 300 20px/1 "Barlow", sans-serif;
+  font: 300 20px/1.1 "Barlow", sans-serif;
   text-transform: uppercase;
   text-shadow: 1px 1.7px 5px rgba(0, 0, 0, 0.7);
   color: #fff;
@@ -1227,12 +1274,12 @@ figcaption strong {
 }
 
 figcaption:hover p {
-  color: #15a1b1;
+  color: #07b8a3;
 }
 
 .copy {
   margin-top: 20px;
-  padding: 20px 10px;
+  padding: 40px 10px 20px;
   background-color: #262626;
   margin: auto;
   text-transform: uppercase;
@@ -1251,7 +1298,7 @@ figcaption:hover p {
 }
 
 .copy a:hover {
-  color: #374478;
+  color: #4e0579;
   text-decoration: underline;
 }
 
@@ -1260,19 +1307,19 @@ figcaption:hover p {
 }
 
 ::-webkit-input-placeholder {
-  color: #545454;
+  color: #323232;
 }
 
 :-ms-input-placeholder {
-  color: #545454;
+  color: #323232;
 }
 
 ::-ms-input-placeholder {
-  color: #545454;
+  color: #323232;
 }
 
 ::placeholder {
-  color: #545454;
+  color: #323232;
 }
 
 #lp-appointment-form {
@@ -1287,7 +1334,7 @@ figcaption:hover p {
   font-size: 50px;
   font-weight: 700;
   margin: 10px auto 40px;
-  color: #545454;
+  color: #323232;
 }
 
 #lp-appointment-form > p {
@@ -1311,7 +1358,7 @@ figcaption:hover p {
   display: table;
   margin: 10px auto;
   background-color: #d3d3d3;
-  color: #545454;
+  color: #323232;
   border-radius: 5px;
   padding: 15px;
   font-size: 16px;
@@ -1332,7 +1379,7 @@ figcaption:hover p {
 #lp-appointment-form textarea:focus, #lp-appointment-form input:focus, #lp-appointment-form button:focus {
   outline-style: solid;
   outline-width: thin;
-  outline-color: #374478;
+  outline-color: #4e0579;
 }
 
 #lp-appointment-form .submitBtn {
@@ -1342,29 +1389,16 @@ figcaption:hover p {
   display: table;
 }
 
-@media (max-width: 1160px) {
-  h2 {
-    font-size: 45px;
-  }
+@media (max-width: 1080px) {
   .address {
     font-size: 16px;
   }
   .phone {
     font-size: 32px;
   }
-  #stamp {
-    right: auto;
-    left: 10px;
-    top: -130px;
-  }
-  #stamp img {
-    max-width: 180px;
-  }
-  .border-box:before, .border-box:after {
-    width: 20px;
-  }
-  .personalized:last-of-type .border-box:before, .personalized:last-of-type .border-box:after {
-    width: 50px;
+  .over {
+    top: -60px;
+    left: 5px;
   }
 }
 
@@ -1382,34 +1416,16 @@ figcaption:hover p {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  #banner .flex-ed {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 600px;
+  }
   .phone {
     font-size: 24px;
   }
-  #stamp {
-    top: -100px;
-  }
   h2, #practice h2 {
     text-align: center;
-  }
-  #lists {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .list ul {
-    max-width: 490px;
-  }
-  .border-box:before, .border-box:after {
-    visibility: visible;
-  }
-  .border-box:after, .border-box:before {
-    width: 50px;
-    bottom: 20px;
-  }
-  .bkgrd {
-    padding: 0;
   }
   #dentist {
     display: block;
@@ -1423,12 +1439,22 @@ figcaption:hover p {
     max-width: 600px;
     padding: 10px 10px 0;
   }
+  .split p {
+    text-align: center;
+  }
   #reviews {
     padding: 0;
+    margin-top: 30px;
   }
   #review-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .comment p {
+    text-align: center;
+  }
+  .over {
+    top: -30px;
   }
   #google {
     -webkit-box-flex: 0;
@@ -1443,8 +1469,8 @@ figcaption:hover p {
   #google > div {
     margin-top: 10px;
   }
-  #patients {
-    display: block;
+  #practice p {
+    text-align: center;
   }
   footer h2 {
     font-size: 50px;
@@ -1521,7 +1547,7 @@ figcaption:hover p {
   header .phone {
     font-size: 16px;
     color: #fff;
-    background-color: #374478;
+    background-color: #4e0579;
     border: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1557,70 +1583,8 @@ figcaption:hover p {
     padding: 0 50px;
     font-weight: 700;
   }
-  #banner .container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #banner figure {
-    margin: 0;
-    background-color: #f3f3f3;
-    padding-bottom: 0;
-  }
-  #banner figure img {
-    margin: 0 auto;
-    max-width: 100%;
-  }
-  #banner .extract {
-    font-size: 22px;
-    color: #064164;
-    margin-bottom: 20px;
-    display: block;
-  }
-  #banner h1 {
-    position: static;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .3em;
-    color: #064367;
-    margin-top: 15px;
-  }
-  #lists {
-    display: block;
-    margin: 0 auto 20px;
-  }
-  .list {
-    max-width: 750px;
-    margin: 30px auto 20px;
-  }
-  .personalized {
-    margin-top: -40px;
-    border-radius: 0;
-    margin: 0;
-  }
-  .personalized + .personalized {
-    background-color: #151515;
-  }
-  #stamp {
-    position: static;
-    display: block;
-    max-width: 100%;
-    background: -webkit-gradient(linear, left bottom, left top, from(#031b1f), to(#15a1b1));
-    background: linear-gradient(0deg, #031b1f 0%, #15a1b1 100%);
-    min-height: 280px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 35vh;
-  }
-  #stamp img {
-    max-width: 100%;
-  }
-  .border-box:before, .border-box:after {
-    height: 63%;
+  #banner .contain {
+    padding: 30px 10px;
   }
   .split p, .comment, #practice p {
     text-align: center;
@@ -1656,16 +1620,19 @@ figcaption:hover p {
 }
 
 @media (max-width: 700px) {
-  .personalized h1, .personalized h2 {
-    font-size: 36px;
+  #banner .contain {
+    padding-top: 20px;
+  }
+  .offer {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 45%;
+            flex: 1 1 45%;
   }
   .looking {
     margin: 20px auto;
   }
   .looking p {
     padding: 14px 20px;
-    font-size: 18px;
-    line-height: 1.45;
   }
   .looking p span {
     font-size: 24px;
@@ -1702,15 +1669,6 @@ figcaption:hover p {
   .safe-bar span {
     margin: 0;
   }
-  .personalized {
-    padding: 20px 10px;
-  }
-  .personalized .list {
-    margin: 10px auto;
-  }
-  .list ul li {
-    font-size: 24px;
-  }
   footer h2 {
     font-size: 40px;
     margin-top: 0;
@@ -1727,7 +1685,6 @@ figcaption:hover p {
     margin-top: -10px;
   }
   .frame {
-    max-width: 98%;
     margin: auto;
   }
   .frame iframe {
@@ -1742,22 +1699,24 @@ figcaption:hover p {
 }
 
 @media (max-width: 480px) {
-  .personalized h1, .personalized h2 {
-    font-size: 32px;
-  }
   h2, footer h2 {
     font-size: 36px;
+  }
+  .insurance .flex-ed span {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 120px;
+            flex: 0 1 120px;
+  }
+  .over {
+    top: -50px;
   }
   #practice .container {
     padding: 0;
   }
-  .border-box:before, .border-box:after {
-    display: none;
-  }
   .bkgrd {
     padding-bottom: 25px;
   }
-  .copy span:last-of-type {
+  .copy span:first-of-type, .copy span:last-of-type {
     display: block;
     font-size: 0;
   }
@@ -1774,15 +1733,8 @@ figcaption:hover p {
   .safe-bar {
     font-size: 15px;
   }
-  .personalized {
-    padding: 20px 10px;
-  }
-  .personalized p, .personalized figcaption p {
-    font-size: 18px;
-  }
-  .personalized li {
-    line-height: 1;
-    padding-bottom: 5px;
+  .caption a {
+    font-size: 14px;
   }
   .comment p {
     font-size: 16px;
@@ -1795,7 +1747,7 @@ figcaption:hover p {
     font-size: 14px;
   }
   h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
   .insurance h2 {
     margin: 10px 0 -15px;
