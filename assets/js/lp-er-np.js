@@ -50,9 +50,6 @@ $(function () {
    $(window).on('resize', function () {
    if (theWindow.width() <= 790) {
      //might have to change to # banner
-  $("#stamp").prependTo("#banner")
-  $(".appt-bar .extract").prependTo("#banner figure");
-  $("#banner h1").appendTo("#banner figure");
   $("#practice .flex-ed").cycle({
               slides: ">div",
               pager: "#practice .pager",
